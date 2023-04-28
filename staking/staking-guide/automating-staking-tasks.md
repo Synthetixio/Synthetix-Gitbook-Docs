@@ -22,7 +22,7 @@ Below is an example of a wallet currently using the automated claiming bot throu
 
 * Create a Task on Gelato by clicking the "Create Task" button
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 * Use `0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5` as the contract address
 
