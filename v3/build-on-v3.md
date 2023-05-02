@@ -30,7 +30,7 @@ _**Rewards Distributor**: can be used by Pool owners to bootstrap or incentivise
 
 ## Markets
 
-Here is an example implementation of a Number Guessing Game, as a Market on v3.&#x20;
+Here is an example implementation of a Number Guessing Game, implemented as a Market on v3.&#x20;
 
 {% embed url="https://github.com/Synthetixio/lottery-market" %}
 Example v3 Market
@@ -52,6 +52,10 @@ Proposal to create a new v3 Pool, owned by the Spartan Council
 
 * Want to create a novel derivatives market? You might consider create a v3 Market, then requesting one of the existing Pools to delegate your Market some collateral.
 * Want to control your own liquidity? You could propose to create a new Pool, and offer additional token incentives to stakers with the Rewards Manager.&#x20;
+
+## Notes
+
+* Currently snx is the only collateral enabled on Synthetix v3, and changes require governance&#x20;
 
 ## Docs
 
