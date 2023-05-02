@@ -15,14 +15,30 @@ All `PerpsV2` contracts are routed proxies. That is, for the most part, there's 
 ├── PerpsV2Market.sol
 ├── PerpsV2MarketBase.sol
 ├── PerpsV2MarketData.sol
-├── PerpsV2MarketDelayedOrders.sol
-├── PerpsV2MarketDelayedOrdersBase.sol
-├── PerpsV2MarketDelayedOrdersOffchain.sol
+├── PerpsV2MarketDelayedExecution.sol
+├── PerpsV2MarketDelayedIntent.sol
+├── PerpsV2MarketLiquidate.sol
 ├── PerpsV2MarketProxyable.sol
 ├── PerpsV2MarketSettings.sol
 ├── PerpsV2MarketState.sol
+├── PerpsV2MarketStateLegacyR1.sol
 ├── PerpsV2MarketViews.sol
 ├── ProxyPerpsV2.sol
+│   ├── IPerpsV2ExchangeRate.sol
+│   ├── IPerpsV2Market.sol
+│   ├── IPerpsV2MarketBaseTypes.sol
+│   ├── IPerpsV2MarketBaseTypesLegacyR1.sol
+│   ├── IPerpsV2MarketConsolidated.sol
+│   ├── IPerpsV2MarketDelayedExecution.sol
+│   ├── IPerpsV2MarketDelayedIntent.sol
+│   ├── IPerpsV2MarketLiquidate.sol
+│   ├── IPerpsV2MarketSettings.sol
+│   ├── IPerpsV2MarketState.sol
+│   ├── IPerpsV2MarketViews.sol
+    ├── MockPerpsV2Market.sol
+    ├── MockPerpsV2StateConsumer.sol
+    ├── TestablePerpsV2Market.sol
+    ├── TestablePerpsV2MarketEmpty.sol
 ```
 
 There are 3 primary points of interaction: `ProxyPerpsV2`, `PerpsV2MarketSettings`, and `FuturesMarketManager` (note: does not have a `PerpsV2` prefix/suffix).
@@ -56,17 +72,13 @@ Although this does not provide mutative methods to perform actions externally (a
 
 ### PerpsV2MarketSettings
 
-_See market settings page for details._
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+_Checkout the_ [useful-links.md](useful-links.md "mention") _section for details._
 
 ### Contract Addresses
 
 {% embed url="https://github.com/Synthetixio/synthetix-docs/blob/master/content/addresses.md" %}
-
 _As of writing this, PerpsV2 is only available on Optimism._
+{% endembed %}
 
 ## How to Transfer Margin
 
@@ -92,10 +104,12 @@ A positive `marginDelta` is considered a deposit, negative is a withdrawal and z
 There are 3 methods to open a position: **Atomic orders** (not to be confused with atomic swaps), **delayed orders**, and **delayed off-chain orders**.
 
 {% hint style="warning" %}
-We **STRONGLY** recommend you implement **delayed offchain orders**, but will document the other order types too below. In future version, its possible that the inferior order types are rmoved.
+We **STRONGLY** recommend you integrate using **delayed off-chain orders**, but will document the other order types too below. In future version, its possible that the inferior order types can be removed.
 {% endhint %}
 
-#### Atomic orders
+<details>
+
+<summary>Atomic orders</summary>
 
 As the name would suggest, atomic orders allow users to open, close, or modify a position _atomically_ (i.e. within a single transaction and without the need for keepers). Historically, this was the primary method for users to open a position in V1.
 
@@ -118,11 +132,13 @@ Similar to `transferMargin`, we use the sign to indicate whether we want to modi
 
 Please refer to the section below for more details on `priceImpactDelta` and `trackingCode`.
 
-{% hint style="warning" %}
-Again, it is highly recommended to **NOT** use this method to open a position. Instead, use an off-chain orders or delayed orders instead. The fees will be substantially lower with other methods.
-{% endhint %}
+_Again, it is highly recommended to **NOT** use this method to open a position. Instead, use an off-chain orders or delayed orders instead. The fees will be substantially lower with other methods._
 
-#### Delayed orders
+</details>
+
+<details>
+
+<summary>Delayed orders</summary>
 
 Delayed orders are async time based orders. Rather than opening a position with a single transaction, an order is created in one transaction and then executed in a separate transaction in the future, hence async and delayed. Positions opened through async delayed orders are charged significantly less than atomic orders. The interface can be found below:
 
@@ -144,31 +160,18 @@ interface IDelayedOrders {
 }
 ```
 
-{% hint style="info" %}
-Order fees are based on order type, size, and side (long/short). You can calculate the order fee by passing a `sizeDelta` and an `orderType` (atomic, delayed, delayed off-chain) to the `orderFees` view.
-{% endhint %}
-
 Order submission requires similar arguments to that of `modifyPosition` with the addition of a `desiredTimeDelta` argument. `desiredTimeDelta` specifies the amount of time (in seconds) an async order must _wait_ before it is executable. If `desiredTimeDelta == 0` then we default to the minimum required time for convenience. The specified `desiredTimeDelta` must be above the required minimum otherwise a revert will occur. The minimum can be found in `PerpsV2MarketSettings`.
 
 Once an order has been submitted successfully, it's stored and tagged with the current block's timestamp + `desiredTimeDelta` (denoted as `intentionTime`) for execution at a later time. After `block.timestamp >= order.intentionTime` then the order is executable by either the account that submitted the order or a keeper.
 
-{% hint style="info" %}
-Orders can go stale. We consider an order stale if it hasn't been executed for a long enough period. Stale orders can no longer be executed and can only be cancelled.
-{% endhint %}
+* Delayed orders can be executable before the intention time. This typically occurs during high price volatile periods. If a price update occurs
+* Order fees are based on order type, size, and side (long/short). You can calculate the order fee by passing a `sizeDelta` and an `orderType` (atomic, delayed, delayed off-chain) to the `orderFees` view.
 
-{% hint style="info" %}
-A commitment fee is charged on order submission. This is deducted from the trader's margin. If an order is cancelled, the commitment fee is foregone to the fee pool and rewarded to SNX stakers.&#x20;
-{% endhint %}
 
-{% hint style="info" %}
-A keeper fee is also charged on order submission however completely refunded if the executing account is the same as the submitter.
-{% endhint %}
 
-{% hint style="info" %}
-Delayed orders are also executable before the intention time. This typically occurs during high price volatile periods. If a price update occurs
-{% endhint %}
+</details>
 
-#### Delayed off-chain orders
+#### Delayed off-chain orders (recommended)
 
 Similar to `DelayedOrders`, off-chain orders also follow a familiar interface and operate asynchronously. From an integration standpoint, this is almost exactly the same as delayed orders (with the exception of differing function names and execution).
 
@@ -188,7 +191,7 @@ interface IDelayedOffchainOrders {
 }
 ```
 
-Since off-chain orders require off-chain prices, price feed update data needs to be submitted upon execution. Off-chain prices are queried against [Pyth](https://pyth.network/price-feeds) and passed into `executeOffchainOrder` as a `bytes[]` array. On-chain we perform a variety of checks and if all pass, the order is executed and a position is opened.
+Off-chain orders require off-chain prices, price feed update data needs to be submitted upon execution. Off-chain prices are queried against [Pyth](https://pyth.network/price-feeds) and passed into `executeOffchainOrder` as a `bytes[]` array. On-chain we perform a variety of checks and if all pass, the order is executed and a position is opened.
 
 {% hint style="info" %}
 If the Pyth off-chain price deviates too far from on-chain prices, the execution will revert and a position will not be opened. This deviation can also be found in `PerpsV2MarketSettings`.
@@ -200,6 +203,14 @@ Not all markets have off-chain delayed orders enabled due to needing both Pyth a
 
 {% hint style="info" %}
 Executing or canceling an off-chain order using a non-off-chain method will result in revert. The inverse is also true.
+{% endhint %}
+
+{% hint style="info" %}
+Orders can go stale. We consider an order stale if it hasn't been executed for a long enough period. Stale orders can no longer be executed and can only be cancelled.
+{% endhint %}
+
+{% hint style="info" %}
+A keeper fee is also charged on order submission however completely refunded if the executing account is the same as the submitter.
 {% endhint %}
 
 Building a keeper that is reliable, cost efficient, and up to date to execute orders across all markets in a timely manner is hard. We provide a keeper that you can run, fork, or use as documentation to build one of your own.
@@ -218,17 +229,20 @@ To close a position is the same as modifying an existing position with equal but
 const market = new Contract(address, abi, signer);
 const position = await market.positions(account);
 
-// Atomically
+// Atomically (inferior)
 await market.modifyPosition(-position.size, priceImpactDelta);
 
-// Convenience method for atomic orders.
+// Convenience method for atomic orders (inferior)
 await market.closePosition(priceImpactDelta);
 
-// Delayed orders
+// Delayed orders (inferior)
 await market.submitDelayedOrder(-position.size, priceImpactDelta);
 
-// Delayed off-chain orders
+// Delayed off-chain orders (recommended)
 await market.submitOffchainDelayedOrder(-position.size, priceImpactDelta);
+
+// Convenience method for delayed off-chain orders (also recommended)
+function submitCloseOffchainDelayedOrderWithTracking(uint desiredFillPrice, bytes32 trackingCode) external;
 ```
 
 {% hint style="info" %}
