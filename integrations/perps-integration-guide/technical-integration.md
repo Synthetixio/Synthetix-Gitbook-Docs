@@ -177,17 +177,19 @@ Similar to `DelayedOrders`, off-chain orders also follow a familiar interface an
 
 ```solidity
 interface IDelayedOffchainOrders {
-    function submitOffchainDelayedOrder(int sizeDelta, uint priceImpactDelta) external;
+    function submitCloseOffchainDelayedOrderWithTracking(uint desiredFillPrice, bytes32 trackingCode) external;
+
+    function submitOffchainDelayedOrder(int sizeDelta, uint desiredFillPrice) external;
 
     function submitOffchainDelayedOrderWithTracking(
         int sizeDelta,
-        uint priceImpactDelta,
+        uint desiredFillPrice,
         bytes32 trackingCode
     ) external;
 
-    function cancelOffchainDelayedOrder(address account) external;
-
     function executeOffchainDelayedOrder(address account, bytes[] calldata priceUpdateData) external payable;
+
+    function cancelOffchainDelayedOrder(address account) external;
 }
 ```
 
@@ -230,24 +232,20 @@ const market = new Contract(address, abi, signer);
 const position = await market.positions(account);
 
 // Atomically (inferior)
-await market.modifyPosition(-position.size, priceImpactDelta);
+await market.modifyPosition(-position.size, desiredFillPrice);
 
 // Convenience method for atomic orders (inferior)
-await market.closePosition(priceImpactDelta);
+await market.closePosition(desiredFillPrice);
 
 // Delayed orders (inferior)
-await market.submitDelayedOrder(-position.size, priceImpactDelta);
+await market.submitDelayedOrder(-position.size, desiredFillPrice);
 
 // Delayed off-chain orders (recommended)
-await market.submitOffchainDelayedOrder(-position.size, priceImpactDelta);
+await market.submitOffchainDelayedOrder(-position.size, desiredFillPrice);
 
 // Convenience method for delayed off-chain orders (also recommended)
-function submitCloseOffchainDelayedOrderWithTracking(uint desiredFillPrice, bytes32 trackingCode) external;
+await market.submitCloseOffchainDelayedOrderWithTracking(desiredFillPrice);
 ```
-
-{% hint style="info" %}
-In the coming release, we hope to provide a `closeDelayedOrder` and `closeOffchainDelayedOrder` convenience methods, similar to that of `closePosition`.
-{% endhint %}
 
 ## What is Price Impact / Fill Price?
 
