@@ -177,7 +177,7 @@ Once complete, select the “Create a new branch for this commit and start a pul
 
 <figure><img src="https://miro.medium.com/max/875/0*omlYgK9hNVGlR-9k" alt=""><figcaption></figcaption></figure>
 
-Your First pull request should be the first draft of your final SIP, so make sure it’s complete.
+Click "Propose new file," and then you're almost done. Now approve that pull request, merge it yourself, then go to pull request and click new pull request. From here, it should show a comparison to the Synthetix official repo with your own, click create pull request and wait for a SIP editor to review.
 
 ## Editor Review of your Draft SIP
 
