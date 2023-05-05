@@ -147,7 +147,7 @@ SIP-XXX-Y.ext
 
 ## Adding a SIP to the Repository <a href="#c826" id="c826"></a>
 
-Once you’ve written your SIP and included all the components above, you are ready to begin the process of adding your SIP to the [Synthetix repository](https://github.com/Synthetixio/SIPs). First, you must fork the repository by clicking on the “Fork” button in the top right:
+Once you’ve written your SIP and included all the components above, you are ready to begin the process of adding your SIP to the [Synthetix repository](https://github.com/Synthetixio/SIPs/tree/master/content/sips). First, you must fork the repository by clicking on the “Fork” button in the top right:
 
 <figure><img src="https://miro.medium.com/max/875/0*43c0wV4G-kENmdNl" alt=""><figcaption></figcaption></figure>
 
@@ -159,13 +159,19 @@ Next, add your SIP to your fork. Create a new branch by clicking on the “maste
 
 <figure><img src="https://miro.medium.com/max/690/0*eFlBTs1FNkV71A-R" alt=""><figcaption></figcaption></figure>
 
-From the new branch, click on the “Add file” dropdown and select “Create new file” or “Upload files”:
+From the new branch. Click "Content" then "SIP"
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Now click on the “Add file” dropdown and select “Create new file” or “Upload files”:
 
 <figure><img src="https://miro.medium.com/max/875/0*Fgz458_wyL__uwYt" alt=""><figcaption></figcaption></figure>
 
 Enter the Name/Title of the SIP. Use an abbreviated filename such as “sip-draft\_title\_abbrev.md, with a maximum of 44 characters. Next, add the content of your SIP under the “<> Edit new file” tab:
 
-<figure><img src="https://miro.medium.com/max/873/0*bmnV7og1AllNbARV" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 Once complete, select the “Create a new branch for this commit and start a pull request.” radio button and click the green “Propose new file” button:
 

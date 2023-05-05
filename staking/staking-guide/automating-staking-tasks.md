@@ -18,7 +18,7 @@ Below is an example of a wallet currently using the automated claiming bot throu
 
 * Deposit funds to your [Gelato Account](https://app.gelato.network/funds). These funds will be used to pay for transactions tha claim on your behalf. Recommended Value is $20-25 as Optimism transactions only cost approximately $.50
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Create a Task on Gelato by clicking the "Create Task" button
 
