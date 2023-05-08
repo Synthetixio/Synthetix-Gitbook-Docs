@@ -41,10 +41,7 @@ Below is an example of a wallet currently using the automated claiming bot throu
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 * Name your task and finish creating it.
-* Once you're done, now you'll need to delegate only claiming rights to the Gelato contract, accessible as msg.sender once the task is created, on[ ](https://staking.synthetix.io/delegate)[https://staking.synthetix.io/delegate](https://staking.synthetix.io/delegate).
-
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
-
+* Once you're done, now you'll need to delegate only claiming rights to the Gelato contract, 0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5, once the task is created, on[ ](https://staking.synthetix.io/delegate)[https://staking.synthetix.io/delegate](https://staking.synthetix.io/delegate).
 * That's it; you're done!
 
 ## #2 - Automated Claiming with Burning to Claim
