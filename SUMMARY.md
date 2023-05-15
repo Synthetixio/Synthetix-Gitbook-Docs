@@ -58,6 +58,7 @@
   * [Polynomial - Perps and Option Vaults](synthetix-ecosystem/built-on-synthetix/polynomial-perps-and-option-vaults.md)
   * [1inch/Curve - Atomic Swaps](synthetix-ecosystem/built-on-synthetix/1inch-curve-atomic-swaps.md)
 * [Community Infrastructure](synthetix-ecosystem/community-infrastructure.md)
+* [Ecosystem Operations](synthetix-ecosystem/ecosystem-operations.md)
 
 ## integrations
 
