@@ -5,7 +5,7 @@ description: 'Version: Perps V2'
 # Perps Integration Guide
 
 {% hint style="info" %}
-Perps v3 are in development
+Perps v3 are in development so get in touch&#x20;
 {% endhint %}
 
 ## Description

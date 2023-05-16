@@ -1,5 +1,5 @@
 ---
-description: Information for partners
+description: Information for ecosystem partners
 ---
 
 # Ecosystem Operations
@@ -16,4 +16,10 @@ Fees are attributed to the integrator by using a [Tracking Code](../integrations
 
 {% embed url="https://dune.com/synthetix_community/synthetix-fee" %}
 Dashboard calculating fee share from leading integrators
+{% endembed %}
+
+## Contact
+
+{% embed url="https://discord.com/channels/413890591840272394/459603818246701056" %}
+\#dev-portal channel on Synthetix Discord
 {% endembed %}
