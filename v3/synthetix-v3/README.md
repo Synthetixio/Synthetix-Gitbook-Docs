@@ -1,7 +1,3 @@
----
-description: This is a preview on the upcoming protocol update from v2 to v3
----
-
 # Synthetix v3
 
 {% hint style="warning" %}
@@ -100,8 +96,8 @@ Asset Examples: Spot BTC, Spot ETH, ETH Perps, BTC Perps, ETH Options, etc.
 
 Synth teleporters are more efficient than AMM-based cross-chain bridging solutions because there is no slippage from lack of liquidity on the destination chain. Synth assets are simply burned on one chain and minted on another.
 
-* **Multi-Collateral Staking:** V3 is collateral agnostic, allowing governance to support any collateral to back synthetic assets. This will increase sUSD liquidity and the markets supported by Synthetix. Collateral options will have adjustable variables, such as collateral requirements and rewards, which can be adjusted by governance.
-* **Synthetix Loans**: Users can now provide collateral to the system to generate sUSD without being exposed to debt pool risk, as well as without incurring any interest or issuance fees.
+* **Multi-Collateral Staking:** V3 is collateral agnostic, allowing governance to support any collateral to back synthetic assets. This will increase snxUSD liquidity and the markets supported by Synthetix. Collateral options will have adjustable variables, such as collateral requirements and rewards, which can be adjusted by governance.
+* **Synthetix Loans**: Users can now provide collateral to the system to generate snxUSD without being exposed to debt pool risk, as well as without incurring any interest or issuance fees.
 * **Differentiated Liquidity (Debt) Pools**: Users can choose the pools they want to provide collateral to and then decide which markets and assets within those pools they want to support, instead of delegating collateral to the entire debt pool as in V2x. This gives stakers more control over their credit and allows them to support markets that may be considered too risky by governance due to the singular debt pool for all liquidity.
 
 Example: Risk-averse stakers can delegate their credit to a pool that only backs ETH and BTC perp markets instead of long-tail perp markets.

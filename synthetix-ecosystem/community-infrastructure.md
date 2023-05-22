@@ -4,13 +4,21 @@ description: Tooling and data for interacting with the Synthetix ecosystem
 
 # Community Infrastructure
 
-## Subgraphs
+## Perps
 
 {% embed url="https://thegraph.com/hosted-service/subgraph/synthetix-perps/perps" %}
 Perps v2 subgraph for trades
 {% endembed %}
 
-## Stats Adapters
+{% embed url="https://github.com/Synthetixio/perps-event-decoder" %}
+CLI to decode Perps events (Etherscan doesn't)
+{% endembed %}
+
+{% embed url="https://github.com/Kwenta/kwenta-python-sdk" %}
+SDK for trading on Kwenta
+{% endembed %}
+
+## Stats
 
 {% embed url="https://github.com/DefiLlama/DefiLlama-Adapters/tree/main/projects/synthetix" %}
 Stats adapter for DefiLlama
@@ -20,8 +28,3 @@ Stats adapter for DefiLlama
 Stats adapter for CryptoFees
 {% endembed %}
 
-## SDKs
-
-{% embed url="https://github.com/Kwenta/kwenta-python-sdk" %}
-SDK for trading on Kwenta
-{% endembed %}
