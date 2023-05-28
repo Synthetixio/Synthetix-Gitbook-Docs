@@ -44,11 +44,8 @@
 
 ## V3
 
-* [Synthetix v3](v3/synthetix-v3/README.md)
-  * [v3 FAQ](v3/synthetix-v3/v3-faq.md)
+* [Synthetix v3](v3/synthetix-v3.md)
 * [Build on v3](v3/build-on-v3.md)
-* [V3 Technical Documentation](https://snx-v3-docs.vercel.app/)
-* [Design Guidelines](v3/design-guidelines.md)
 
 ## Synthetix Ecosystem
 

@@ -1,7 +1,11 @@
+---
+description: This page will be superseded
+---
+
 # Synthetix v3
 
 {% hint style="warning" %}
-Synthetix v3 is currently under development and not fully released yet, but you can read more below and see the evolving [technical integration documentation here.](https://snx-v3-docs.vercel.app/)
+**Synthetix V3 is currently in alpha,** [**see the docs here.**](https://docs.synthetix.io/v/v3/) Many functions are temporarily disabled.
 
 Synthetix v2 is the currently live version of the protocol.
 {% endhint %}
