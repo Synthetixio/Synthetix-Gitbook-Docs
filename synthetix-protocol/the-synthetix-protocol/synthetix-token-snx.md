@@ -24,7 +24,7 @@ The inflation rate changes per the following rules:
 
 For up-to-date inflation data, see the [Synthetix Inflation Stats](https://flipsidecrypto.xyz/synthquest/q/inflation-table-YVromr).
 
-These weekly adjustments aim to promote a healthy staking ratio. Please note that these ratios can change based on SCCPs approved by the Spartan Council.
+Please note that these ratios can change based on SCCPs approved by the Spartan Council.
 
 ### Governance
 
