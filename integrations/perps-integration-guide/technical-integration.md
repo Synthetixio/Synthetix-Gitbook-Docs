@@ -101,79 +101,15 @@ A positive `marginDelta` is considered a deposit, negative is a withdrawal and z
 
 ## How to Open a Position
 
-There are 3 methods to open a position: **Atomic orders** (not to be confused with atomic swaps), **delayed orders**, and **delayed off-chain orders**.
+There is only 1 recommended method to open a position: **delayed off-chain orders**.
 
 {% hint style="warning" %}
-We **STRONGLY** recommend you integrate using **delayed off-chain orders**, but will document the other order types too below. In future version, its possible that the inferior order types can be removed.
+We **STRONGLY** recommend you integrate using **delayed off-chain orders**, but will document the other order types too at the bottom of this section. In future version, its possible that the inferior order types will be removed.
 {% endhint %}
-
-<details>
-
-<summary>Atomic orders</summary>
-
-As the name would suggest, atomic orders allow users to open, close, or modify a position _atomically_ (i.e. within a single transaction and without the need for keepers). Historically, this was the primary method for users to open a position in V1.
-
-However, with the introduction of hybrid oracles, it's recommended to use delayed off-chain orders (see below). Prices update more frequently and fees are drastically lower. Below is the atomic orders interface with `modifyPosition` being the operation to open atomically.
-
-```solidity
-interface IAtomicOrders {
-    function modifyPosition(int sizeDelta, uint priceImpactDelta) external;
-    function modifyPositionWithTracking(
-        int sizeDelta,
-        uint priceImpactDelta,
-        bytes32 trackingCode
-    ) external;
-    function closePosition(uint priceImpactDelta) external;
-    function closePositionWithTracking(uint priceImpactDelta, bytes32 trackingCode) external;
-}
-```
-
-Similar to `transferMargin`, we use the sign to indicate whether we want to modify long (positive) or short (negative). Atomic orders have a convenience method to close out the entire position without specifying a `sizeDelta`.
-
-Please refer to the section below for more details on `priceImpactDelta` and `trackingCode`.
-
-_Again, it is highly recommended to **NOT** use this method to open a position. Instead, use an off-chain orders or delayed orders instead. The fees will be substantially lower with other methods._
-
-</details>
-
-<details>
-
-<summary>Delayed orders</summary>
-
-Delayed orders are async time based orders. Rather than opening a position with a single transaction, an order is created in one transaction and then executed in a separate transaction in the future, hence async and delayed. Positions opened through async delayed orders are charged significantly less than atomic orders. The interface can be found below:
-
-```solidity
-interface IDelayedOrders {
-    function submitDelayedOrder(
-        int sizeDelta,
-        uint priceImpactDelta,
-        uint desiredTimeDelta
-    ) external;
-    function submitDelayedOrderWithTracking(
-        int sizeDelta,
-        uint priceImpactDelta,
-        uint desiredTimeDelta,
-        bytes32 trackingCode
-    ) external;
-    function cancelDelayedOrder(address account) external;
-    function executeDelayedOrder(address account) external;
-}
-```
-
-Order submission requires similar arguments to that of `modifyPosition` with the addition of a `desiredTimeDelta` argument. `desiredTimeDelta` specifies the amount of time (in seconds) an async order must _wait_ before it is executable. If `desiredTimeDelta == 0` then we default to the minimum required time for convenience. The specified `desiredTimeDelta` must be above the required minimum otherwise a revert will occur. The minimum can be found in `PerpsV2MarketSettings`.
-
-Once an order has been submitted successfully, it's stored and tagged with the current block's timestamp + `desiredTimeDelta` (denoted as `intentionTime`) for execution at a later time. After `block.timestamp >= order.intentionTime` then the order is executable by either the account that submitted the order or a keeper.
-
-* Delayed orders can be executable before the intention time. This typically occurs during high price volatile periods. If a price update occurs
-* Order fees are based on order type, size, and side (long/short). You can calculate the order fee by passing a `sizeDelta` and an `orderType` (atomic, delayed, delayed off-chain) to the `orderFees` view.
-
-
-
-</details>
 
 #### Delayed off-chain orders (recommended)
 
-Similar to `DelayedOrders`, off-chain orders also follow a familiar interface and operate asynchronously. From an integration standpoint, this is almost exactly the same as delayed orders (with the exception of differing function names and execution).
+Similar to `DelayedOrders`, Delayed off-chain orders also follow a familiar interface and operate asynchronously. From an integration standpoint, this is almost exactly the same as delayed orders (with the exception of differing function names and execution).
 
 ```solidity
 interface IDelayedOffchainOrders {
@@ -222,6 +158,76 @@ Building a keeper that is reliable, cost efficient, and up to date to execute or
 {% endcontent-ref %}
 
 It's recommended to use off-chain delayed orders as the preferred method to open positions. It has the lowest fees and provides the fastest execution, giving traders the best UX.
+
+
+
+{% hint style="danger" %}
+We **STRONGLY** recommend you DO NOT use the below order types, and instead use **Delayed off-chain orders** documented above
+{% endhint %}
+
+<details>
+
+<summary>Delayed orders (NOT recommended)</summary>
+
+Delayed orders are async time based orders. Rather than opening a position with a single transaction, an order is created in one transaction and then executed in a separate transaction in the future, hence async and delayed. Positions opened through async delayed orders are charged significantly less than atomic orders. The interface can be found below:
+
+```solidity
+interface IDelayedOrders {
+    function submitDelayedOrder(
+        int sizeDelta,
+        uint priceImpactDelta,
+        uint desiredTimeDelta
+    ) external;
+    function submitDelayedOrderWithTracking(
+        int sizeDelta,
+        uint priceImpactDelta,
+        uint desiredTimeDelta,
+        bytes32 trackingCode
+    ) external;
+    function cancelDelayedOrder(address account) external;
+    function executeDelayedOrder(address account) external;
+}
+```
+
+Order submission requires similar arguments to that of `modifyPosition` with the addition of a `desiredTimeDelta` argument. `desiredTimeDelta` specifies the amount of time (in seconds) an async order must _wait_ before it is executable. If `desiredTimeDelta == 0` then we default to the minimum required time for convenience. The specified `desiredTimeDelta` must be above the required minimum otherwise a revert will occur. The minimum can be found in `PerpsV2MarketSettings`.
+
+Once an order has been submitted successfully, it's stored and tagged with the current block's timestamp + `desiredTimeDelta` (denoted as `intentionTime`) for execution at a later time. After `block.timestamp >= order.intentionTime` then the order is executable by either the account that submitted the order or a keeper.
+
+* Delayed orders can be executable before the intention time. This typically occurs during high price volatile periods. If a price update occurs
+* Order fees are based on order type, size, and side (long/short). You can calculate the order fee by passing a `sizeDelta` and an `orderType` (atomic, delayed, delayed off-chain) to the `orderFees` view.
+
+
+
+</details>
+
+<details>
+
+<summary>Atomic orders (NOT recommended)</summary>
+
+As the name would suggest, atomic orders allow users to open, close, or modify a position _atomically_ (i.e. within a single transaction and without the need for keepers). Historically, this was the primary method for users to open a position in V1.
+
+However, with the introduction of hybrid oracles, it's recommended to use delayed off-chain orders (see below). Prices update more frequently and fees are drastically lower. Below is the atomic orders interface with `modifyPosition` being the operation to open atomically.
+
+```solidity
+interface IAtomicOrders {
+    function modifyPosition(int sizeDelta, uint priceImpactDelta) external;
+    function modifyPositionWithTracking(
+        int sizeDelta,
+        uint priceImpactDelta,
+        bytes32 trackingCode
+    ) external;
+    function closePosition(uint priceImpactDelta) external;
+    function closePositionWithTracking(uint priceImpactDelta, bytes32 trackingCode) external;
+}
+```
+
+Similar to `transferMargin`, we use the sign to indicate whether we want to modify long (positive) or short (negative). Atomic orders have a convenience method to close out the entire position without specifying a `sizeDelta`.
+
+Please refer to the section below for more details on `priceImpactDelta` and `trackingCode`.
+
+_Again, it is highly recommended to **NOT** use this method to open a position. Instead, use an off-chain orders or delayed orders instead. The fees will be substantially lower with other methods._
+
+</details>
 
 ## How to Close a Position
 
