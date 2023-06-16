@@ -14,6 +14,10 @@ Running a keeper can be tricky without understanding the minute details. To alle
 Official Synthetix perps keeper
 {% endembed %}
 
+{% embed url="https://github.com/Kwenta/kwenta-python-sdk/blob/main/examples/keeper/order_keeper.py" %}
+Unofficial Kwenta perps keeper
+{% endembed %}
+
 &#x20;_Refer to the README for documentation, structure, and contribution_.
 
 {% hint style="info" %}
