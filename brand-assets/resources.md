@@ -15,3 +15,11 @@
 #### Fonts
 
 {% file src="../.gitbook/assets/Fonts.zip" %}
+
+#### Synths
+
+{% file src="../.gitbook/assets/Synths.zip" %}
+
+#### Tokens
+
+{% file src="../.gitbook/assets/Tokens.zip" %}
