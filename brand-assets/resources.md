@@ -23,3 +23,7 @@
 #### Tokens
 
 {% file src="../.gitbook/assets/Tokens.zip" %}
+
+#### Patterns
+
+{% file src="../.gitbook/assets/Patterns.zip" %}
