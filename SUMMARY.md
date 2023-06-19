@@ -81,4 +81,4 @@
 
 ## Brand Assets
 
-* [Resources](brand-assets/resources.md)
+* [Design Resources](brand-assets/design-resources.md)
