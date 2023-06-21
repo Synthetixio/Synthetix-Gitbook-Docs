@@ -24,10 +24,12 @@
 
 {% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/synthetix" %}
 
-#### Synths
+{% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/snx" %}
+
+#### Synths Logos
 
 {% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/synths" %}
 
-#### Markets
+#### Markets Logos
 
 {% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/markets" %}
