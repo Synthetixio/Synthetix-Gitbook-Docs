@@ -20,6 +20,10 @@ SDK for trading on Kwenta
 
 ## Stats
 
+{% embed url="https://data.gbv.dev/synthetix/" %}
+Stats on Perps v2
+{% endembed %}
+
 {% embed url="https://github.com/DefiLlama/DefiLlama-Adapters/tree/main/projects/synthetix" %}
 Stats adapter for DefiLlama
 {% endembed %}
