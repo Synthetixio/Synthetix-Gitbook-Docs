@@ -14,6 +14,18 @@ Running a keeper can be tricky without understanding the minute details. To alle
 Official Synthetix perps keeper
 {% endembed %}
 
+{% hint style="info" %}
+Keepers compete with each other to process orders. The template keeper shown here is functional but inefficient and so unlikely to win any orders in this state.&#x20;
+
+Some notes on shortcomings of the template keeper:
+
+* How it batch execute orders (uses a custom signer pool instead of multi-call)
+* It's not particularly reliable in that it just points to a single RPC but probably desirable if you're running your own node
+* It's not running a local Pyth price service and calls out to another machine
+* It's not using a WS connection and polls for events with `eth_getLogs` on an interval
+* It's bloated and spams RPCs too heavily
+{% endhint %}
+
 {% embed url="https://github.com/Kwenta/kwenta-python-sdk/blob/main/examples/keeper/order_keeper.py" %}
 Unofficial Kwenta perps keeper
 {% endembed %}
