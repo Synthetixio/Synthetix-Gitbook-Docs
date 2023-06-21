@@ -1,4 +1,6 @@
-# Resources
+# Design Resources
+
+<figure><img src="../.gitbook/assets/Design Resources - Brand Book.png" alt=""><figcaption></figcaption></figure>
 
 #### Brandbook
 
@@ -8,22 +10,24 @@
 
 {% file src="../.gitbook/assets/Colors.pdf" %}
 
-#### Logos
-
-{% file src="../.gitbook/assets/Logos.zip" %}
-
 #### Fonts
 
-{% file src="../.gitbook/assets/Fonts.zip" %}
-
-#### Synths
-
-{% file src="../.gitbook/assets/Synths.zip" %}
-
-#### Tokens
-
-{% file src="../.gitbook/assets/Tokens.zip" %}
+{% file src="../.gitbook/assets/Fonts (1).zip" %}
 
 #### Patterns
 
 {% file src="../.gitbook/assets/Patterns.zip" %}
+
+<figure><img src="../.gitbook/assets/Design Resources -  Logos.png" alt=""><figcaption></figcaption></figure>
+
+#### Synthetix Logos
+
+{% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/synthetix" %}
+
+#### Synths
+
+{% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/synths" %}
+
+#### Markets
+
+{% embed url="https://github.com/Synthetixio/synthetix-assets/tree/master/markets" %}
