@@ -2,7 +2,7 @@
 
 > Keepers enables smart contracts to automate key functions and event-driven tasks in a highly reliable, decentralized, and cost-efficient manner.
 
-Synthetix perps require keepers to automate 3 core area of functionality: **delayed order executions**, **delayed off-chain order executions**, and **liquidations**. Keepers are rewarded for performing these duties in the form of sUSD. To find the exact values, refer to on-chain market parameters in `PerpsV2MarketSettings`.
+Synthetix perps require keepers to automate 2 core area of functionality: **delayed off-chain order executions**, and **liquidations**. Keepers are rewarded for performing these duties in the form of sUSD. To find the exact values, refer to on-chain market parameters in `PerpsV2MarketSettings`.
 
 ## Running a Keeper
 
