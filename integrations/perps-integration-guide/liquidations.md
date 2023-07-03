@@ -1,9 +1,5 @@
 # Liquidations
 
-{% hint style="info" %}
-Documentation here is subject to [SIP-2005](https://sips.synthetix.io/sips/sip-2005/) passing.
-{% endhint %}
-
 ## Specification
 
 Below are all relevant functions and events that pertain to perps liquidations.

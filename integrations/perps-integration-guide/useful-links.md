@@ -4,6 +4,12 @@ description: Links for integrators and developers
 
 # Useful Links
 
+### Also see&#x20;
+
+{% content-ref url="../../synthetix-ecosystem/community-infrastructure.md" %}
+[community-infrastructure.md](../../synthetix-ecosystem/community-infrastructure.md)
+{% endcontent-ref %}
+
 ### PerpsV2MarketSettings
 
 Markets on PerpsV2 are highly configurable. `PerpsV2MarketSettings` is another top-level contract used for the storage and retrieval of market specific (and system wide) parameters, segregated by `marketKey`.
