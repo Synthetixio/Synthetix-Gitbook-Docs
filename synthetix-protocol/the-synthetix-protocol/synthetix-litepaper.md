@@ -51,13 +51,13 @@ Interested in learning some of the basics about staking? See the staking section
 #### What are the benefits of adding liquidation to the system? <a href="#what-are-the-benefits-of-adding-liquidation-to-the-system" id="what-are-the-benefits-of-adding-liquidation-to-the-system"></a>
 
 * It creates a stronger incentive for stakers to maintain a healthy C-Ratio, because if they do not they will be liquidated with a penalty.
-* This creates stronger incentives for a healthy network C-Ratio, as other network participants can actively improve the network C-Ratio by liquidation stakers below the liquidation ratio.
+* This creates stronger incentives for a healthy network C-Ratio, as other network participants can actively improve the network C-Ratio by liquidating stakers below the liquidation ratio.
 * It provides a solution to staking wallets that have been abandoned or whose private keys have been lost, as they will no longer drag down the network C-Ratio.
 
 Once a person's C-Ratio goes below the liquidation ratio, and they are flagged, they will have 12 hours to raise their C-Ratio. In this scenario, one of three things will happen:
 
 1. Your C-Ratio goes below the liquidation ratio, and you are flagged and do not self-liquidate.
-   * You will be liquidated and incur a the forced liquidation penalty on your staked SNX; your SNX will be used to pay off your debt, and you will be left with what is leftover; all penalty SNX will be distributed to other stakers.
+   * You will be liquidated and incur a forced liquidation penalty on your staked SNX; your SNX will be used to pay off your debt, and you will be left with what is leftover; all penalty SNX will be distributed to other stakers.
 2. Your C-Ratio goes below the liquidation ratio, and you are flagged, and you self-liquidate. Your liquidated SNX will be used to pay off your debt, leaving you with what is leftover.
    * You will be liquidated and incur a self-liquidation penalty on your staked SNX; all penalty SNX will be distributed to other stakers.
 3. Your C-Ratio is above the target c-ratio after being flagged b/c you burned sUSD or minted new debt.

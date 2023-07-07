@@ -24,9 +24,9 @@ Additionally, smart contract risk, oracle risks, and other risks are also presen
 
 All synths are backed by a mixture of SNX, ETH, LUSD, and other collateral types.&#x20;
 
-Synths are minted when SNX holders stake their SNX as collateral using the Synthetix staking application, a decentralized application for interacting with Synthetix staking contracts. The system is currently backed by a target collateralization ratio (see [current-protocol-parameters.md](../../staking/current-protocol-parameters.md "mention")), as this is a constantly updated variable through community governance. SNX incurs debt when Synths are minted, and to exist the system (i.e. unlock their SNX), they must pay back this debt by burning Synths.
+Synths are minted when SNX holders stake their SNX as collateral using the Synthetix staking application, a decentralized application for interacting with Synthetix staking contracts. The system is currently backed by a target collateralization ratio (see [current-protocol-parameters.md](../../staking/current-protocol-parameters.md "mention")), as this is a constantly updated variable through community governance. SNX incurs debt when Synths are minted, and to exit the system (i.e. unlock their SNX), they must pay back this debt by burning Synths.
 
-ETH, LUSD, and additional collateral types (depending on governance inclusion) also back the system as forms as collateral. This means that users can either borrow against these assets, or lock them in a wrapping contract to generate sUSD, sETH, or other synths.&#x20;
+ETH, LUSD, and additional collateral types (depending on governance inclusion) also back the system as forms of collateral. This means that users can either borrow against these assets, or lock them in a wrapping contract to generate sUSD, sETH, or other synths.&#x20;
 
 ### **Why Stakers Stake**
 
@@ -40,7 +40,7 @@ To learn more about staking, please visit the Synthetix Staking guide.
 
 ### **Minting, burning, and the C-Ratio**
 
-The mechanisms above ensure SNX stakers are incentivized to maintain their Collateralisation Ratio (C-Ratio) at the target rate. This ensures the Synthetix protocol is backed by sufficient collateral to absorb large price shocks. If the value of SNX, each staker’s C Ratio will fluctuate. If it falls below the target c-ratio (with a small buffer to allow for minor fluctuations), they will be unable to claim fees until they restore their ratio.&#x20;
+The mechanisms above ensure SNX stakers are incentivized to maintain their Collateralisation Ratio (C-Ratio) at the target rate. This ensures the Synthetix protocol is backed by sufficient collateral to absorb large price shocks. If the value of SNX or Synths fluctuates, each staker’s C Ratio will fluctuate. If it falls below the target c-ratio (with a small buffer to allow for minor fluctuations), they will be unable to claim fees until they restore their ratio.&#x20;
 
 They adjust their ratio by either minting Synths if their ratio is above the target c-ratio or burning Synths if their ratio is below the target c-ratio.&#x20;
 
