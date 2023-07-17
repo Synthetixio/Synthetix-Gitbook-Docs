@@ -11,6 +11,7 @@
 * [Synthetic Assets](synthetix-protocol/synthetic-assets/README.md)
   * [Perpetual Futures](synthetix-protocol/synthetic-assets/perpetual-futures.md)
   * [Spot Synths](synthetix-protocol/synthetic-assets/spot-synths.md)
+  * [Getting Goerli & Optimistic Goerli Testnet Tokens](synthetix-protocol/synthetic-assets/getting-goerli-and-optimistic-goerli-testnet-tokens.md)
 
 ## Staking
 
