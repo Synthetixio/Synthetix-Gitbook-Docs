@@ -107,7 +107,7 @@ There is only 1 recommended method to open a position: **delayed off-chain order
 We **STRONGLY** recommend you integrate using **delayed off-chain orders**, but will document the other order types too at the bottom of this section. In future version, its possible that the inferior order types will be removed.
 {% endhint %}
 
-#### Delayed off-chain orders (recommended)
+#### Delayed off-chain orders (Only Use This Trading Method)
 
 Similar to `DelayedOrders`, Delayed off-chain orders also follow a familiar interface and operate asynchronously. From an integration standpoint, this is almost exactly the same as delayed orders (with the exception of differing function names and execution).
 
@@ -133,10 +133,6 @@ Off-chain orders require off-chain prices, price feed update data needs to be su
 
 {% hint style="info" %}
 If the Pyth off-chain price deviates too far from on-chain prices, the execution will revert and a position will not be opened. This deviation can also be found in `PerpsV2MarketSettings`.
-{% endhint %}
-
-{% hint style="info" %}
-Not all markets have off-chain delayed orders enabled due to needing both Pyth and Chainlink price feeds.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -167,7 +163,7 @@ We **STRONGLY** recommend you DO NOT use the below order types, and instead use 
 
 <details>
 
-<summary>Delayed orders (NOT recommended)</summary>
+<summary>Delayed orders (DO NOT USE THIS TRADING METHOD)</summary>
 
 Delayed orders are async time based orders. Rather than opening a position with a single transaction, an order is created in one transaction and then executed in a separate transaction in the future, hence async and delayed. Positions opened through async delayed orders are charged significantly less than atomic orders. The interface can be found below:
 
@@ -202,7 +198,7 @@ Once an order has been submitted successfully, it's stored and tagged with the c
 
 <details>
 
-<summary>Atomic orders (NOT recommended)</summary>
+<summary>Atomic orders (DO NOT USE THIS TRADING METHOD)</summary>
 
 As the name would suggest, atomic orders allow users to open, close, or modify a position _atomically_ (i.e. within a single transaction and without the need for keepers). Historically, this was the primary method for users to open a position in V1.
 
