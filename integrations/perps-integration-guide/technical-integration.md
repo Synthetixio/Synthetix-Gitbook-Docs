@@ -101,13 +101,15 @@ A positive `marginDelta` is considered a deposit, negative is a withdrawal and z
 
 ## How to Open a Position
 
-There is only 1 recommended method to open a position: **delayed off-chain orders**.
+There is only ONE method to open a position: **delayed off-chain orders**.
 
-{% hint style="warning" %}
-We **STRONGLY** recommend you integrate using **delayed off-chain orders**, but will document the other order types too at the bottom of this section. In future version, its possible that the inferior order types will be removed.
+{% hint style="danger" %}
+**🚨🚨🚨**\
+**ONLY** integrate using **delayed off-chain orders. DO NOT** use the legacy order types listed at the bottom of the section.\
+**🚨🚨**
 {% endhint %}
 
-#### Delayed off-chain orders (Only Use This Trading Method)
+#### Delayed off-chain orders (ONLY Use This Trading Method)
 
 Similar to `DelayedOrders`, Delayed off-chain orders also follow a familiar interface and operate asynchronously. From an integration standpoint, this is almost exactly the same as delayed orders (with the exception of differing function names and execution).
 
@@ -158,12 +160,14 @@ It's recommended to use off-chain delayed orders as the preferred method to open
 
 
 {% hint style="danger" %}
-We **STRONGLY** recommend you DO NOT use the below order types, and instead use **Delayed off-chain orders** documented above
+❌❌❌ \
+**DO NOT** use the below order types, and instead use **Delayed off-chain orders** documented above. The below order types are only included for completeness.\
+❌❌❌
 {% endhint %}
 
 <details>
 
-<summary>Delayed orders (DO NOT USE THIS TRADING METHOD)</summary>
+<summary>Delayed orders ( ❌ DO NOT USE THIS TRADING METHOD ❌ )</summary>
 
 Delayed orders are async time based orders. Rather than opening a position with a single transaction, an order is created in one transaction and then executed in a separate transaction in the future, hence async and delayed. Positions opened through async delayed orders are charged significantly less than atomic orders. The interface can be found below:
 
@@ -198,7 +202,7 @@ Once an order has been submitted successfully, it's stored and tagged with the c
 
 <details>
 
-<summary>Atomic orders (DO NOT USE THIS TRADING METHOD)</summary>
+<summary>Atomic orders ( ❌ DO NOT USE THIS TRADING METHOD ❌ )</summary>
 
 As the name would suggest, atomic orders allow users to open, close, or modify a position _atomically_ (i.e. within a single transaction and without the need for keepers). Historically, this was the primary method for users to open a position in V1.
 
