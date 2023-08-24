@@ -4,7 +4,7 @@
 
 Synthetix has partnered with dHEDGE to deploy a one-click debt mirror index for SNX stakers on Optimism. With this tool, each staker can hedge their exposure to the debt pool in a few clicks.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Hedging.gif" alt=""><figcaption></figcaption></figure>
 
 All a staker must do is navigate to the [**Synthetix Staking dapp debt section**](https://staking.synthetix.io/debt) and purchase the dSNX token through the UI by clicking "Hedge on Toros"
 
