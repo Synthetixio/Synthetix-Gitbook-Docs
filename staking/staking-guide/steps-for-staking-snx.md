@@ -1,6 +1,6 @@
 # Steps for Staking SNX
 
-### Basic Steps for Staking on Optimistic Ethereum
+Basic Steps for Staking on Optimistic Ethereum
 
 1. Transfer SNX to a compatible wallet: MetaMask, Trezor, Ledger, Coinbase Wallet, Trust Wallet, Rainbow Wallet, or other Wallet Connect-supported wallets.
 2. Visit [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/).
@@ -21,6 +21,6 @@
 
 3. Visit [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/) and connect your wallet. Don't forget to connect your wallet to Optimism.
 
-![Connect your wallet](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDwqzB5BTWasJXBHd4rXZ%2Fuploads%2F8qb2Zf2n99tYGjye6QjF%2FSteps%20for%20Staking%20SNX%2002.png?alt=media\&token=af5b6862-dd16-4ee3-85d8-fafd08909bf6)
+<figure><img src="../../.gitbook/assets/Minting.gif" alt=""><figcaption></figcaption></figure>
 
 4. Stake your SNX using the "Stake & Borrow More" button on the [Synthetix Staking app](https://staking.synthetix.eth.limo/). All of your SNX is now staked and earning rewards. Your account has also been issued sUSD debt that will fluctuate in value. To hedge this debt, use the [one click debt hedging tool provided by dHedge](https://staking.synthetix.eth.limo/debt/manage/buy).
