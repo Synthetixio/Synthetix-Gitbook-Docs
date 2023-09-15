@@ -17,6 +17,7 @@
 * [Current Protocol Parameters](staking/current-protocol-parameters.md)
 * [Staking Guide](staking/staking-guide/README.md)
   * [Steps for Staking SNX](staking/staking-guide/steps-for-staking-snx.md)
+  * [Steps for Unstaking SNX](staking/staking-guide/steps-for-unstaking-snx.md)
   * [Automating Staking Tasks](staking/staking-guide/automating-staking-tasks.md)
   * [Steps for Claiming Rewards](staking/staking-guide/steps-for-claiming-rewards.md)
   * [Collateralization Ratio](staking/staking-guide/collateralization-ratio.md)

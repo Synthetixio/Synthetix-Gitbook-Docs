@@ -38,7 +38,7 @@ Below is an example of a wallet currently using the automated claiming bot throu
 
 * Click "Whenever Possible" to ensure that the contract checks if you're eligible for rewards all the time. If this isn't selected, then it may miss eligible rewards.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * Name your task and finish creating it.
 * Once you're done, now you'll need to delegate only claiming rights to the Gelato contract, 0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5, once the task is created, on[ ](https://staking.synthetix.io/delegate)[https://staking.synthetix.io/delegate](https://staking.synthetix.io/delegate).

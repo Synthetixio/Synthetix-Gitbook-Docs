@@ -11,10 +11,7 @@ Basic Steps for Staking on Optimistic Ethereum
 
 ### Staking SNX in Detail
 
-1. Transfer SNX to a compatible wallet: MetaMask, Frame, Trezor, Ledger, Coinbase Wallet, Rainbow Wallet, or other Wallet Connect supported wallets.
-
-![Transfer SNX to a compatible wallet](https://cdn.sanity.io/images/zacd2n8f/production/ea4e19ccc6c0289ab2957755fe4fe39b9028aba9-2952x1776.png?q=75\&fit=clip\&auto=format)
-
+1. Transfer SNX to a compatible wallet: MetaMask, Frame, Trezor, Ledger, Coinbase Wallet, Rainbow Wallet, or other Wallet Connect-supported wallets.
 2. Bridge your SNX from Ethereum Mainnet to Optimistic Ethereum on the [Optimism Bridge](https://app.optimism.io/bridge).
 
 ![Bridge your SNX](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDwqzB5BTWasJXBHd4rXZ%2Fuploads%2F5wWvoqlpFRfhpRV17ehh%2FSteps%20for%20Staking%20SNX%2001.png?alt=media\&token=157b886a-8476-496f-8dfb-01c406c04f1a)

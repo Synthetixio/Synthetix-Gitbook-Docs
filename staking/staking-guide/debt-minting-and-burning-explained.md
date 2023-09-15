@@ -10,7 +10,7 @@
 
 ### Minting and Burning - A Deeper Explanation
 
-<figure><img src="../../.gitbook/assets/Burning.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Burning (1).gif" alt=""><figcaption></figcaption></figure>
 
 **Minting** is the process of creating synths (sUSD) with an associated debt obligation, collateralized by SNX.
 
