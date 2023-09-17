@@ -6,12 +6,12 @@ description: 'Version: 1.6 (Jan 2023)'
 
 ## Abstract <a href="#abstract" id="abstract"></a>
 
-Synthetix is a decentralized liquidity provisioning protocol built on Ethereum and Optimistic Ethereum (a layer two scaling solution built on Ethereum). Synthetic assets, and associated products, are collateralized by stakers via Synthetix Network Token (SNX), which when locked in a staking contract enables the issuance of synthetic assets (synths). This pooled collateral model allows users to perform conversions between synths directly with the smart contract, avoiding the need for counterparties. This mechanism solves the liquidity and slippage issues experienced by DEXs.&#x20;
+Synthetix is a decentralized liquidity provisioning protocol built on Ethereum and Optimistic Ethereum (a layer two scaling solution built on Ethereum). Synthetic assets, and associated products, are collateralized by stakers via Synthetix Network Token (SNX), which when locked in a staking contract enables the issuance of synthetic assets (synths). This pooled collateral model allows users to perform conversions between synths directly with the smart contract, avoiding the need for counterparties. This mechanism solves the liquidity and slippage issues experienced by DEXs.
 
 Many protocols have built ontop of the Synthetix infrastructure. Learn more about these protocols in the "Built on Synthetix" section in the docs.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ## Collateral within the Synthetix Protocol <a href="#snx-as-collateral" id="snx-as-collateral"></a>
@@ -42,8 +42,8 @@ In this way, SNX stakers act as a pooled counterparty to all Synth exchanges; st
 
 Interested in learning some of the basics about staking? See the staking section of the docs
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ### **Liquidation Risk**
@@ -54,7 +54,7 @@ Interested in learning some of the basics about staking? See the staking section
 * This creates stronger incentives for a healthy network C-Ratio, as other network participants can actively improve the network C-Ratio by liquidating stakers below the liquidation ratio.
 * It provides a solution to staking wallets that have been abandoned or whose private keys have been lost, as they will no longer drag down the network C-Ratio.
 
-Once a person's C-Ratio goes below the liquidation ratio, and they are flagged, they will have 12 hours to raise their C-Ratio. In this scenario, one of three things will happen:
+Once a person's C-Ratio goes below the liquidation ratio, and they are flagged, they will have 8 hours to raise their C-Ratio. In this scenario, one of three things will happen:
 
 1. Your C-Ratio goes below the liquidation ratio, and you are flagged and do not self-liquidate.
    * You will be liquidated and incur a forced liquidation penalty on your staked SNX; your SNX will be used to pay off your debt, and you will be left with what is leftover; all penalty SNX will be distributed to other stakers.
@@ -68,7 +68,7 @@ Once a person's C-Ratio goes below the liquidation ratio, and they are flagged, 
 
 ### Advantages of Synthetix Infrastructure and liquidity provisioning
 
-Trading on Synthetix infrastructure provides many advantages over centralized exchanges and order book based DEX’s. The lack of an order book means all trades are executed against the contract, known as P2C (peer-to-contract) trading. Assets are assigned an exchange rate through price feeds supplied by an oracle, and can be converted using partner apps.&#x20;
+Trading on Synthetix infrastructure provides many advantages over centralized exchanges and order book based DEX’s. The lack of an order book means all trades are executed against the contract, known as P2C (peer-to-contract) trading. Assets are assigned an exchange rate through price feeds supplied by an oracle, and can be converted using partner apps.
 
 ### **Spot Synths**
 
@@ -80,9 +80,9 @@ Synths are synthetic assets that track the price of the underlying asset. They a
 
 ### **Synthetix Futures**
 
-Synthetix Perps is a decentralized perpetual futures exchange with deep liquidity and low fees that utilizes liquidity from the Synthetix debt pool.&#x20;
+Synthetix Perps is a decentralized perpetual futures exchange with deep liquidity and low fees that utilizes liquidity from the Synthetix debt pool.
 
-Users can trade perps and gain exposure to a range of assets without holding the actual asset. The margin for each position is denominated in sUSD, which can be minted and burned as needed, allowing users to avoid exposure to volatility in the value of their margin and simplifying PnL and liquidation calculations.&#x20;
+Users can trade perps and gain exposure to a range of assets without holding the actual asset. The margin for each position is denominated in sUSD, which can be minted and burned as needed, allowing users to avoid exposure to volatility in the value of their margin and simplifying PnL and liquidation calculations.
 
 As the counterparty to all orders, the SNX debt pool takes on the risk of any skew in the market. A perpetual-style funding rate is paid from the heavier to the lighter side of the market to encourage a neutral balance. Perps enable a much expanded and capital-efficient trading experience by enabling leveraged long and short exposure.
 
@@ -128,7 +128,7 @@ Fees are allocated based on the proportion of debt each staker has issued. For e
 
 When an SNX staker wants to exit the system or reduce their debt and unlock staked SNX, they must pay back their debt. At its simplest: a staker mints 10 sUSD by locking SNX as collateral, and must burn 10 sUSD to unlock it. But if the debt pool fluctuates (and therefore their individual debt fluctuates) while they are staked, they may need to burn more or less debt than they minted. The process for reducing debt to zero is as follows:
 
-* The Synthetix contract determines their debt balance&#x20;
+* The Synthetix contract determines their debt balance
 * The required amount of sUSD is burned, and total supply of sUSD is updated along with the sUSD balance in the user’s wallet.
 * Their SNX balance becomes transferrable.
 
@@ -152,7 +152,7 @@ Alice now burns 100 sUSD, which burns (100 / 400) \_ 200 shares = 50 shares Alic
 
 ### **Oracles**
 
-The value of all synthetic assets in the Synthetix system is determined by oracles that push price feeds on-chain. It uses an algorithm with a variety of sources to form an aggregate value for each asset.&#x20;
+The value of all synthetic assets in the Synthetix system is determined by oracles that push price feeds on-chain. It uses an algorithm with a variety of sources to form an aggregate value for each asset.
 
 Read more about the use of oracles within the Synthetix protocol
 
