@@ -148,7 +148,7 @@ Burning sUSD reduces the number of debt shares issued against a staker and the n
 
 Example:
 
-Alice now burns 100 sUSD, which burns (100 / 400) \_ 200 shares = 50 shares Alice would have 50 shares after her burn, ⅓ of the debt pool. Alice’s remaining debt will be (50 / 150 shares) \_ 300 = 100 sUSD
+Alice now burns 100 sUSD, which burns (100 / 400) \* 200 shares = 50 shares Alice would have 50 shares after her burn, ⅓ of the debt pool. Alice’s remaining debt will be (50 / 150 shares) \* 300 = 100 sUSD
 
 ### **Oracles**
 
