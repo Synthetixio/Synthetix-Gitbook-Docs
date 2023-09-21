@@ -26,11 +26,4 @@ function submitOffchainDelayedOrderWithTracking(
     uint priceImpactDelta,
     bytes32 trackingCode
 ) external;
-
-function submitDelayedOrderWithTracking(
-    int sizeDelta,
-    uint priceImpactDelta,
-    uint desiredTimeDelta,
-    bytes32 trackingCode
-) external;
 ```
