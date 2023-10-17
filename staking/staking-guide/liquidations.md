@@ -22,11 +22,13 @@ Once a staker's C-Ratio drops below the liquidation ratio (find the current rati
 
 #### Example of a Liquidation
 
-Let's consider a staker named Bob. Bob has staked 1000 SNX and minted 2000 sUSD, which gives him a C-Ratio of 200% (1000 SNX \* $2 SNX price / 2000 sUSD = 200%). The liquidation ratio is 160%, and the target C-Ratio is 400%. Refer to [current-protocol-parameters.md](../current-protocol-parameters.md "mention") for most updates variables.
+Let's consider a staker named Bob.&#x20;
 
-If the price of SNX falls to $1.50, Bob's C-Ratio will drop to 150% (1000 SNX \* $1.50 SNX price / 2000 sUSD = 150%), which is below the liquidation ratio. Bob is now flagged for liquidation and has 6 hours to raise his C-Ratio.
+Bob has staked 1000 SNX  and minted 1000 sUSD, which gives him a C-Ratio of 200% (1000 SNX \* $2 SNX price = $2000 in SNX / 1000 sUSD = 200%). The liquidation ratio is 160%, and the target C-Ratio is 400%. Refer to [current-protocol-parameters.md](../current-protocol-parameters.md "mention") for most updated variables.
 
-* If Bob does nothing and the 6 hours pass, the system will liquidate his position. He will incur a 60% penalty on his staked SNX, meaning 600 SNX will be taken from his stake and distributed to other stakers. The remaining 400 SNX will be used to pay off his debt, and any leftover SNX will be returned to him.
+If the price of SNX falls to $1.50, Bob's C-Ratio will drop to 150% (1000 SNX \* $1.50 SNX price = $1500 in SNX / 1000 sUSD = 150%), which is below the liquidation ratio. Bob is now flagged for liquidation and has 6 hours to raise his C-Ratio.
+
+* If Bob does nothing (or raises his C-Ratio below the target) and the 6 hours pass, the system will liquidate his position. He will incur a 60% penalty on his staked SNX, meaning 600 SNX will be taken from his stake and distributed to other stakers. The remaining 400 SNX will be used to pay off his debt, and any leftover SNX will be returned to him.
 * If Bob chooses to self-liquidate, he will incur a 50% penalty on his staked SNX, meaning 500 SNX will be taken from his stake and distributed to other stakers. The remaining 500SNX will be used to pay off his debt, and any leftover SNX will be returned to him.
 * If Bob manages to increase his C-Ratio above the target C-Ratio of 400% within the 6 hours by burning sUSD or minting new debt, he will avoid liquidation.
 
