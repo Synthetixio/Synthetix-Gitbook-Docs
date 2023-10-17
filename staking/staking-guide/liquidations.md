@@ -40,8 +40,6 @@ If Bob opts for self-liquidation (scenario 2), he might face a 50% penalty on th
 
 Alternatively, if Bob manages to rebalance his stake (scenario 3), by adding more SNX or burning some sUSD, he could maintain or even improve his C-Ratio, thus avoiding any penalties.
 
-This example highlights the mechanisms at play, emphasizing the importance of active participation and prudent management of one's staking position within the Synthetix network.
-
 
 
 Note: Please refer to [current-protocol-parameters.md](../current-protocol-parameters.md "mention") for the most updated variables
