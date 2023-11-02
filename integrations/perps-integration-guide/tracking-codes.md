@@ -8,7 +8,12 @@ A `trackingCode` is used to associate and attribute volume generated through ato
 
 ## Obtaining a Tracking Code
 
-Tracking codes are ad-hoc and differ on a case by case basis. They are used to attribute volume. If you would like to receive a `trackingCode`, please reach out in [#dev-portal](https://discord.com/channels/413890591840272394/459603818246701056) channel on [Synthetix Discord](https://discord.gg/synthetix).
+Tracking codes are issued on a case by case basis, to genuine integrators once they are actively sending volume through the protocol. There is no documentation or permission required to integrate with Synthetix contracts, so the steps to obtaining a tracking code and share of fees are:
+
+1. Integrate your project with Synthetix
+2. Set your tracking code as your project name
+3. Perform some transactions on mainnet (for Perps you will see them [here](https://dune.com/queries/2132948/3501082))
+4. Reach out in [#dev-portal](https://discord.com/channels/413890591840272394/459603818246701056) channel on [Synthetix Discord](https://discord.gg/synthetix), to share your project and early transactions
 
 ## Volume Attribution
 
