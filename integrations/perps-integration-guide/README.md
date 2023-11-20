@@ -5,7 +5,7 @@ description: 'Version: Perps V2'
 # Perps Integration Guide
 
 {% hint style="info" %}
-Perps v3 are in development so get in touch&#x20;
+Perps v3 are [in development](https://docs.synthetix.io/v/v3/for-perp-integrators/perps-v3)&#x20;
 {% endhint %}
 
 ## Description
