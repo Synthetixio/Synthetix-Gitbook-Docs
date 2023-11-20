@@ -14,7 +14,7 @@ Instead of using GitHub directly, the grants council has funded an easy to use t
 
 {% embed url="https://pr.synthetix.io/" %}
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
@@ -163,7 +163,7 @@ From the new branch. Click "Content" then "SIP"
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now click on the “Add file” dropdown and select “Create new file” or “Upload files”:
 

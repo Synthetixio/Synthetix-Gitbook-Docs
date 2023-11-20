@@ -1,56 +1,38 @@
-# Automating Staking Tasks
+# Automating Staking, Claiming, and Burning
 
-Synthetix has partnered with Gelato to enable stakers to automate staking-related tasks. Some of the tasks that can be automated are - claiming rewards, minting max (to stake additional SNX), and burning (to unstake some SNX, and raise your c-ratio).&#x20;
+Synthetix, in partnership with Gelato, offers automation for various staking-related tasks, such as claiming rewards, minting max (to stake additional SNX), and burning (to unstake some SNX or raise your c-ratio). This automation is facilitated by the Synthetix Delegate function, introduced with [SIP-10](https://sips.synthetix.io/sips/sip-10/) in March 2020. Gelato bots, while unable to control your entire staking account, can claim rewards, mint, and burn on your behalf using this delegate function.
 
-Automation functionality can be enabled using the Synthetix Delegate function, which has been a part of the system since the release of SIP-10 in March 2020. Gelato bots cannot control your staking account; they can only claim rewards on your behalf by utilizing the delegate function.
+#### Automated Claiming
 
-## #1 - Automated Claiming
+**How it Works**:
 
-Let us explore a quick example to understand how automated claiming through Gelato works:
+* The bot claims your rewards if your c-ratio exceeds the target at any point during the week.
+* If you manually burn sUSD to raise your c-ratio above the target, the bot will also claim your rewards.
+* If your c-ratio never exceeds the target, the bot will not claim your rewards.
 
-* If at any point during the week, you exceed the target c-ratio, the automated claiming bot will claim your rewards.
-* If you are below the target c-ratio and burn sUSD manually to increase your C-Ratio above the target, automated claiming will claim your rewards.
-* If your account never exceeds the target c-ratio, the automated claiming bot WILL NOT claim your rewards.
+**Setup Guide**:
 
-Below is an example of a wallet currently using the automated claiming bot through Gelato -&#x20;
+* **Deposit Funds**: Add funds to your Gelato Account for transaction fees. A recommended amount is $20-25, considering Optimism transactions cost approximately $0.50.
+* **Create a Task**: Go to Gelato and click "Create Task." Use `0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5` as the contract address.
 
-### Setup Guide - Claiming
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* Deposit funds to your [Gelato Account](https://app.gelato.network/funds). These funds will be used to pay for transactions tha claim on your behalf. Recommended Value is $20-25 as Optimism transactions only cost approximately $.50
+* **Select Function**: Choose "Claim" after clicking "Select a function."
+* **Enter Your Address**: Input your address in the designated field.
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-* Create a Task on Gelato by clicking the "Create Task" button
+* **Set Frequency**: Select "Whenever Possible" for constant eligibility checks.
+* **Name Your Task**: Provide a name and complete the task setup.
+* **Delegate Claiming Rights**: Delegate only claiming rights to the Gelato contract (0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5) at [https://staking.synthetix.io/delegate](https://staking.synthetix.io/delegate).
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+#### Automated Claiming with 'Burn to Claim'
 
-* Use `0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5` as the contract address
+**Functionality**:
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+* If your c-ratio is below the target but you have sufficient sUSD to burn, Gelato will burn sUSD first and then claim your SNX rewards.
 
-* Click "Select a function" and then select "Claim"
+**Setup Guide**:
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
-* Put your address into the "address" line
-
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
-* Click "Whenever Possible" to ensure that the contract checks if you're eligible for rewards all the time. If this isn't selected, then it may miss eligible rewards.
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-* Name your task and finish creating it.
-* Once you're done, now you'll need to delegate only claiming rights to the Gelato contract, 0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5, once the task is created, on[ ](https://staking.synthetix.io/delegate)[https://staking.synthetix.io/delegate](https://staking.synthetix.io/delegate).
-* That's it; you're done!
-
-## #2 - Automated Claiming with Burning to Claim
-
-If you are below the target and have enough sUSD in your wallet to burn to the target, Gelato will burn sUSD and then claim your pending SNX rewards.
-
-Although this feature is useful, it is not required. To enable automated claiming with burn to claim, see below.
-
-### Setup Guide - Claim with Burn to Claim
-
-* Use the same setup guide, but instead of "Claim," use the function "Burn and Claim" and delegate the ability to burn alongside claim to the gelato address.
-* That's it!
+* Follow the same steps as above, but choose the "Burn and Claim" function instead of "Claim."
+* Delegate the ability to both burn and claim to the Gelato address.

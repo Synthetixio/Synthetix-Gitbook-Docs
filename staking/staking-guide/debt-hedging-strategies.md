@@ -1,19 +1,25 @@
-# Debt Hedging Strategies
+# Simplified Debt Hedging
 
-### One-Click Debt Hedging - dHEDGE dSNX <a href="#one-click-debt-hedgingdhedge-dsnx" id="one-click-debt-hedgingdhedge-dsnx"></a>
+**Introduction to One-Click Debt Hedging**
 
-Synthetix has partnered with dHEDGE to deploy a one-click debt mirror index for SNX stakers on Optimism. With this tool, each staker can hedge their exposure to the debt pool in a few clicks.
+Synthetix collaborates with dHEDGE to offer a straightforward solution for debt hedging via a one-click debt mirror index. This tool, specifically designed for SNX stakers on the Optimism network, simplifies the process of hedging against debt pool exposure.
 
-<figure><img src="../../.gitbook/assets/Hedging.gif" alt=""><figcaption></figcaption></figure>
+#### How to Use the One-Click Hedging Tool
 
-All a staker must do is navigate to the [**Synthetix Staking dapp debt section**](https://staking.synthetix.io/debt) and purchase the dSNX token through the UI by clicking "Hedge on Toros"
+* **Accessing the Tool**: Visit the [Synthetix Staking dapp debt section](https://staking.synthetix.io/debt) to start the process.
+* **Purchasing dSNX Token**: In the user interface, select "Hedge on Toros" to buy the dSNX token.
+* **Hedging Ratio**: One sUSD worth of the dSNX token hedges an equivalent amount of your sUSD debt.
 
-1 sUSD worth of debt mirror token will hedge one sUSD worth of debt.
+<figure><img src="../../.gitbook/assets/debthedginggif.gif" alt=""><figcaption></figcaption></figure>
 
-Example: If you have 100,000 of sUSD active debt and purchase 100,000 of the dHEDGE debt mirror index token, it will keep your debt in _approximate_ parity with the debt pool without any outside interaction.
+#### Practical Example
 
-To withdraw, a user must navigate to [Toros Finance](https://toros.finance/derivative/dsnx) and click the 'Sell' button.
+* **Hedging your Debt**: If you have an active debt of 100,000 sUSD, purchasing 100,000 sUSD worth of the dHEDGE debt mirror index token will approximately align your debt with the movements of the overall debt pool, minimizing the need for active management.
 
-**Alternate Hedging Strategies**
+#### Withdraw from dHEDGE (to burn sUSD)
 
-This is not the only debt hedging strategies, though it is the safest in ensuring that your issued debt will equal active debt when you want to exit the system.
+* **Process**: To withdraw from the hedging strategy, go to [Toros Finance](https://toros.finance/derivative/dsnx) and select the 'Sell' button to sell your dSNX tokens.
+
+#### Alternative Hedging Strategies
+
+* **Other Options**: While the dHEDGE dSNX tool offers a convenient method to ensure parity between issued and active debt, it's not the sole strategy available. SNX stakers may explore other methods.

@@ -1,23 +1,28 @@
-# Steps for Staking SNX
+# Steps for Staking SNX (via Minting)
 
-Basic Steps for Staking on Optimistic Ethereum
+**Staking on Optimistic Ethereum**
 
-1. Transfer SNX to a compatible wallet: MetaMask, Trezor, Ledger, Coinbase Wallet, Trust Wallet, Rainbow Wallet, or other Wallet Connect-supported wallets.
-2. Visit [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/).
-3. Bridge your SNX from Layer 1 (Ethereum Mainnet) to Layer 2 (Optimistic Ethereum). The bridge to process this is accessible at [https://staking.synthetix.eth.limo/bridge](https://staking.synthetix.eth.limo/bridge).
-4. You'll need to bridge over Ethereum, for gas fees, through the [Optimism Gateway](https://gateway.optimism.io/) to process transactions on Optimism, just like you would on Layer 1.
-5. Before proceeding, ensure that you're connected to the Optimism network by heading over to [https://chainlist.org/](https://chainlist.org/). Once on Chainlist, add Optimistic Ethereum to your wallet.
-6. After migrating your Synthetix and bridging over ETH to pay Optimistic Ethereum transaction fees, you can stake your tokens. To do this, navigate to the [staking menu](https://staking.synthetix.eth.limo/). Once there, use the 'Stake and Borrow More' function and confirm your transaction.
+1. **Transfer SNX to a Compatible Wallet**: Use wallets like MetaMask, Frame, Trezor, Ledger, Coinbase Wallet, Rainbow Wallet, or other Wallet Connect-supported wallets.
+2. **Bridge Your SNX to Optimistic Ethereum**: Transfer SNX from Ethereum Mainnet to Optimistic Ethereum using the [Optimism Bridge](https://app.optimism.io/bridge).
 
-### Staking SNX in Detail
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-1. Transfer SNX to a compatible wallet: MetaMask, Frame, Trezor, Ledger, Coinbase Wallet, Rainbow Wallet, or other Wallet Connect-supported wallets.
-2. Bridge your SNX from Ethereum Mainnet to Optimistic Ethereum on the [Optimism Bridge](https://app.optimism.io/bridge).
+1. **Visit the Staking Site**: Go to [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/) and connect your wallet.
+2. **Connect to the Optimism Network**: Ensure your wallet is connected to Optimistic Ethereum. Visit [https://chainlist.org/](https://chainlist.org/) to add the network.
+3. **Bridge Ethereum for Gas Fees**: Bridge Ethereum through the [Optimism Gateway](https://gateway.optimism.io/) for fees on Optimism.
+4. **Stake Your SNX on Optimism**: Use the "Stake & Borrow More" button on the [Synthetix Staking app](https://staking.synthetix.eth.limo/) to stake your SNX.
 
-![Bridge your SNX](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FDwqzB5BTWasJXBHd4rXZ%2Fuploads%2F5wWvoqlpFRfhpRV17ehh%2FSteps%20for%20Staking%20SNX%2001.png?alt=media\&token=157b886a-8476-496f-8dfb-01c406c04f1a)
+<figure><img src="../../.gitbook/assets/Mintinggif.gif" alt=""><figcaption></figcaption></figure>
 
-3. Visit [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/) and connect your wallet. Don't forget to connect your wallet to Optimism.
+## **Staking on Ethereum Mainnet**
 
-<figure><img src="../../.gitbook/assets/Minting.gif" alt=""><figcaption></figcaption></figure>
+1. **Transfer SNX to a Compatible Wallet**: Same as above.
+2. **Be on the Ethereum Mainnet**: Ensure your wallet is set to ETH mainnet and that the dapp is as well. No bridging is required if your SNX tokens are already on mainnet.
+3. **Visit the Staking Site**: Navigate to the Synthetix staking platform.
+4. **Stake Your SNX on Mainnet**: Follow the same process to stake SNX, but on the Ethereum Mainnet version of the platform.
 
-4. Stake your SNX using the "Stake & Borrow More" button on the [Synthetix Staking app](https://staking.synthetix.eth.limo/). All of your SNX is now staked and earning rewards. Your account has also been issued sUSD debt that will fluctuate in value. To hedge this debt, use the [one click debt hedging tool provided by dHedge](https://staking.synthetix.eth.limo/debt/manage/buy).
+#### Important Note: Locked SNX Due to Staking & Minting
+
+* **Lock Period**: When you stake SNX or mint additional sUSD, there is a mandatory lock period of 7 days.
+* **Restrictions During Lock Period**: During this time, you cannot burn your staked SNX or reduce your sUSD debt beyond the target collateralization ratio (c-ratio).
+* **Applies to Both Networks**: This lock-in rule applies for staking on Optimistic Ethereum and Ethereum Mainnet.

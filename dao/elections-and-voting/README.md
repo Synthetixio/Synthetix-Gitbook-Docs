@@ -20,7 +20,7 @@ Step 3: Vote on the Synthetix Governance Module (every 4 months)
 
 ## Voting <a href="#70cf" id="70cf"></a>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 While the voting process is in theory as simple as staking and then submitting your vote, there are some additional details to consider. First, you must have SNX staked prior to the snapshot for a particular election before you can vote. This snapshot is done prior to the nomination period beginning.
 

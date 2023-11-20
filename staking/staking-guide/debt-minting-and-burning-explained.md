@@ -1,31 +1,27 @@
-# Debt, Minting, and Burning Explained
+# Understanding Debt, Minting, and Burning
 
-### Debt, Minting, and Burning SNX - A Quick Summary
+#### Overview of Debt Dynamics in Synthetix
 
-* **Active debt** is your share of the global debt pool, which changes with the composition of the debt pool. View the current debt pool composition at [https://staking.synthetix.eth.limo/debt/overview](https://staking.synthetix.eth.limo/debt/overview).
-* **Issued Debt** refers to the initial value of sUSD issued when you stake SNX.
-* **Minting** involves creating sUSD by locking SNX as collateral (staking), which increases your active debt.
-* **Burning** is the opposite of minting, as it destroys sUSD and removes debt from the system, decreasing your active debt.
-* Burning increases your C-Ratio, allowing you to claim rewards and transfer SNX.
+* **Active Debt**: This is your share of the global debt pool in the Synthetix system. The composition and value of this pool fluctuate, impacting your active debt proportionally. You can view the current debt pool composition at [Debt Pool Overview](https://staking.synthetix.eth.limo/debt/overview).
+* **Issued Debt**: When you stake SNX and mint sUSD, the initial value of this sUSD is your issued debt.
 
-### Minting and Burning - A Deeper Explanation
+#### Minting: Creating Synths
 
-<figure><img src="../../.gitbook/assets/Burning (1).gif" alt=""><figcaption></figcaption></figure>
+* **Process**: Minting is done by staking SNX as collateral to generate sUSD (synths), which in turn increases your active debt.
+* **Purpose**: This process allows you to participate in the Synthetix ecosystem by providing liquidity and earning potential rewards.
 
-**Minting** is the process of creating synths (sUSD) with an associated debt obligation, collateralized by SNX.
+#### Burning: Reducing Debt
 
-**Burning** involves destroying synths (sUSD) and reducing the associated debt obligation by an equal value, unstaking SNX, and burning sUSD.
+* **Process**: Burning is the act of destroying sUSD, thereby reducing both your active debt and the overall debt in the system.
+* **Impact on C-Ratio**: Burning sUSD improves your Collateralization Ratio (C-Ratio), enabling you to claim rewards and transfer SNX.
 
-A staker cannot claim their epoch rewards if their account C-Ratio is below the target C-Ratio. In this situation, they would burn sUSD to increase their C-Ratio. Conversely, if a staker's C-Ratio is higher than the target C-Ratio during an epoch snapshot, they are not using their SNX collateral to its full potential, as some SNX are not being used/staked for collateralization. In this case, an SNX staker would mint sUSD by staking more SNX.
+#### Practical Application of Minting and Burning
 
-### Active Debt
+* **C-Ratio Management**: If your C-Ratio falls below the target, you need to burn sUSD to raise it and become eligible for claiming rewards. Conversely, having a C-Ratio above the target means your SNX collateral is not being utilized fully, suggesting the potential to stake more SNX (and mint more sUSD).
 
-Active debt represents a staker's debt owed to the global debt pool, expressed in USD. When sUSD is minted (and SNX staked), issued debt is assigned to the staker's account in sUSD. Active debt is a dynamic variable that constantly changes with the movements of the global debt pool.
+#### Active Debt: A Critical Component
 
-As traders become more profitable, the global debt pool increases in value, as does the active debt of stakers. Conversely, when traders are less profitable, the global debt pool decreases in value, along with active debt.
-
-### The Importance of Active Debt
-
-Active debt signifies the stakers' share of the debt pool obligation. It is crucial not to overlook this variable, as stakers must eventually repay this debt to unlock their SNX collateral.
-
-Debt hedging strategies that mimic the overall debt pool are the safest way for stakers to ensure their active debt aligns with their issued debt. Interested in automatic hedging? dHEDGE, a Synthetix partner, recently released a one-click debt hedging solution on Optimism. [Read more](https://blog.synthetix.io/dhedge-debt-mirror-index-token-2/).
+* **Dynamic Nature**: Active debt is dynamic, adjusting with the global debt pool's fluctuations due to trading activities within the Synthetix network.
+* **Trading Impact**: Profitable trading increases the global debt pool and your active debt; less profitable trading reduces both.
+* **Staker Responsibility**: As a staker, you're responsible for eventually repaying this active debt to unlock your SNX collateral.
+* **Hedging Strategies**: It's advisable to adopt debt hedging strategies that mirror the overall debt pool. dHEDGE offers an automatic debt hedging solution on Optimism, which you can read about [here](https://blog.synthetix.io/dhedge-debt-mirror-index-token-2/).
