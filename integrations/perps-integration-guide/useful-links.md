@@ -28,11 +28,17 @@ Parameters range from small to impactful and can only be updated through passed 
 | `maxMarketValue`               | Market OI cap on either short/long                                     |
 | `minKeeperFee`                 | Minimum fee in sUSD paid to keeper for liquidating or executing orders |
 
-For a complete list, refer to the Dune Dashboard below:
+For a complete list, refer to the Dune Dashboards below:
 
 {% embed url="https://dune.com/meb/snx-settings" %}
 PerpsV2MarketSettings Dune Analytics
 {% endembed %}
+
+{% embed url="https://dune.com/synthetix_community/perps-impact" %}
+Table view of Perps V2 settings and calculations
+{% endembed %}
+
+
 
 ### Trade, position and candle data
 
