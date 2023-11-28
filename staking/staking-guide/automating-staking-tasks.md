@@ -1,4 +1,4 @@
-# Automating Staking, Claiming, and Burning
+# Automating Staking, Claiming, Burning, and Minting
 
 Synthetix, in partnership with Gelato, offers automation for various staking-related tasks, such as claiming rewards, minting max (to stake additional SNX), and burning (to unstake some SNX or raise your c-ratio). This automation is facilitated by the Synthetix Delegate function, introduced with [SIP-10](https://sips.synthetix.io/sips/sip-10/) in March 2020. Gelato bots, while unable to control your entire staking account, can claim rewards, mint, and burn on your behalf using this delegate function.
 
@@ -65,7 +65,7 @@ SNX community member Gunboats has developed a tool in collaboration with the Gel
 **Step 3: Configure MaxMint Contract**
 
 * **Access MaxMint on Etherscan**: Visit the MaxMint contract page on Etherscan.
-  * Ethereum Mainnet: [0x509c4C872d2a8A82aD2C9Cbd09869697c7C6729b](https://etherscan.io/address/0x509c4C872d2a8A82aD2C9Cbd09869697c7C6729b#writeContract)
+  * Ethereum Mainnet: [0x213f1d3d8cac06d39436380fdaee93007b1bd108](https://etherscan.io/address/0x213f1d3d8cac06d39436380fdaee93007b1bd108)
   * Optimism: [0xaD2E8F76f5f7b4378fD49fE62b8C0960511cf734](https://optimistic.etherscan.io/address/0xaD2E8F76f5f7b4378fD49fE62b8C0960511cf734#writeContract)
 * **Set Configuration**: Connect your wallet and Call the setConfig function. Choose between C-Ratio Mode or sUSD Mode for settings (see below)
 
