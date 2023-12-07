@@ -1,4 +1,8 @@
-# Automating Staking, Claiming, Burning, and Minting
+# Legacy Automated Minting & Claiming
+
+{% hint style="info" %}
+Gelato has recently upgraded to Gelato V2, to access your old tasks, please visit [https://legacy.app.gelato.network/](https://legacy.app.gelato.network/)
+{% endhint %}
 
 Synthetix, in partnership with Gelato, offers automation for various staking-related tasks, such as claiming rewards, minting max (to stake additional SNX), and burning (to unstake some SNX or raise your c-ratio). This automation is facilitated by the Synthetix Delegate function, introduced with [SIP-10](https://sips.synthetix.io/sips/sip-10/) in March 2020. Gelato bots, while unable to control your entire staking account, can claim rewards, mint, and burn on your behalf using this delegate function.
 
@@ -15,12 +19,12 @@ Synthetix, in partnership with Gelato, offers automation for various staking-rel
 * **Deposit Funds**: Add funds to your Gelato Account for transaction fees. A recommended amount is $20-25, considering Optimism transactions cost approximately $0.50.
 * **Create a Task**: Go to Gelato and click "Create Task." Use `0xaAd3a6178d741DEA76F57901FeeDaC0f7Bb280E5` as the contract address.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Select Function**: Choose "Claim" after clicking "Select a function."
 * **Enter Your Address**: Input your address in the designated field.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * **Set Frequency**: Select "Whenever Possible" for constant eligibility checks.
 * **Name Your Task**: Provide a name and complete the task setup.
