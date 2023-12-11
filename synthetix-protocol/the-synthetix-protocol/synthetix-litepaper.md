@@ -26,7 +26,7 @@ Governance has at times introduced additional collateral types into the system; 
 
 ### **Why SNX holders stake**
 
-SNX holders are incentivized to stake their SNX tokens in many ways. Firstly, there are exchange rewards. These are generated whenever someone interacts with Synthetix Liquidity (i.e. on Kwenta Perpetual Futures). Each trade generates an exchange fee sent to a fee pool, available for SNX stakers to claim their proportion each week. The other incentive for SNX holders to stake/mint is SNX staking rewards, which comes from the protocol’s inflationary monetary policy. As of February of 2022, the Synthetix inflationary system is derived from a target staking ratio. This change introduces a target ratio for staking of 85%. It then adjusts the inflation weekly up or down by 10% depending on whether the staking ratio is below or above the target ratio to incentivize stakers to hit this target. If it is between 80-90%, then inflation is decreased by 5%. These SNX tokens are distributed to SNX stakers weekly on a pro-rata basis provided their collateralization ratio does not fall below the target threshold.
+SNX holders are incentivized to stake their SNX tokens in many ways. Firstly, there are exchange rewards. These are generated whenever someone interacts with Synthetix Liquidity (i.e. on Kwenta Perpetual Futures). Each trade generates an exchange fee sent to a fee pool, available for SNX stakers to claim their proportion each week. Inflationary rewards are no longer distributed to stakers with the passage of SIP 2043.
 
 ### **Minting, burning, and the C-Ratio**
 
@@ -120,7 +120,7 @@ When Synthetix liquidity is used to exchange through the Synthetix contract, a f
 
 * The fee pool checks whether there are fees currently available and whether the staker is eligible to receive fees.
 * The amount of fees in sUSD is sent to the staker’s wallet address and the balance of the fee pool is updated.
-* Additionally, a pro-rata amount of escrowed (inflationary)SNX is assigned to the wallet address from the SNX staking rewards contract.
+* Inflationary rewards are no longer distributed to stakers with the passage of SIP 2043.
 
 Fees are allocated based on the proportion of debt each staker has issued. For example, if a staker has issued 1,000 sUSD in debt, the debt pool is 10,000 sUSD, and 100 in fees are generated in a fee period, this staker is entitled to 10 sUSD because their debt represents 10% of the debt pool. The same proportional distribution mechanism is used for SNX staking rewards.
 

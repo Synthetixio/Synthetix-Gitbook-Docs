@@ -4,7 +4,7 @@ The Synthetix Network token (SNX) incentivizes coordination and growth within th
 
 ### Staking
 
-SNX Stakers earn weekly rewards for collateralizing the network. These rewards are paid in two ways. One is from **trading fees**, which are charged to traders. The other is **inflationary rewards**, which are newly minted SNX tokens held in escrow for a year. Escrow-locked SNX tokens can be staked during this escrow and provide further rewards to stakers.
+SNX Stakers earn trading rewards, which are charged to traders for collateralizing the network. Inflationary rewards are no longer distributed to stakers with the passage of SIP 2043.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
