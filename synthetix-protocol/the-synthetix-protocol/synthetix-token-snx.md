@@ -12,19 +12,9 @@ SNX Stakers earn weekly rewards for collateralizing the network. These rewards a
 
 ### Inflation Rewards
 
-Synthetix distributes weekly inflation rewards based on [SIP-202: Target Staking Ratio](https://sips.synthetix.io/sips/sip-202/) guidelines and variables set in [SCCP-294](https://sips.synthetix.io/sccp/sccp-294/).
+With the recent (Dec 2023) passage of SIP-2043, inflation has been reduced to zero, ending inflationary rewards for staking. Learn more in the [blog post](https://blog.synthetix.io/the-end-of-synthetix-token-inflation/).
 
-The goal is to achieve a target staking ratio by adjusting the inflation rate weekly. The staking ratio is defined as the percentage of SNX collateral in staked addresses versus the total SNX collateral.
-
-The inflation rate changes per the following rules:
-
-1. If staking ratio is >82% => lower inflation by 10%
-2. If staking ratio is between 58% and 82% => no change
-3. If staking ratio is <58% => increase inflation by 10%
-
-For up-to-date inflation data, see the [Synthetix Inflation Stats](https://flipsidecrypto.xyz/synthquest/q/inflation-table-YVromr).
-
-Please note that these ratios can change based on SCCPs approved by the Spartan Council.
+For past inflation data, see the [Synthetix Inflation Stats](https://flipsidecrypto.xyz/synthquest/q/inflation-table-YVromr).
 
 ### Governance
 

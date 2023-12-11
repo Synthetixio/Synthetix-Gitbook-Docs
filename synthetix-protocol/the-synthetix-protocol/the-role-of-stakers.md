@@ -12,7 +12,9 @@ Synthetix staking is vastly different from other DeFi protocols because it allow
 
 ### Benefits of Staking
 
-Stakers earn weekly rewards for collateralizing the network. These rewards are paid in two ways. One is from trading fees, which are charged to traders. The other is inflationary rewards, which are newly minted SNX tokens held in escrow for a year. Escrow-locked SNX tokens can be staked during this escrow and provide further rewards to stakers.
+Stakers earn weekly rewards for collateralizing the network. These rewards are paid via trading fees, which are charged to traders. Additionally, stakers receive an interest and free-fee loan against their SNX collateral when they stake.
+
+Inflationary rewards are no longer distributed to stakers with the passage of SIP 2043.
 
 ### Risks of Staking
 
@@ -30,7 +32,7 @@ ETH, LUSD, and additional collateral types (depending on governance inclusion) a
 
 ### **Why Stakers Stake**
 
-SNX holders are incentivized to stake their SNX in many ways. Firstly, there are exchange rewards. These are generated whenever someone makes an exchange within the Synthetix system. Each trade generates an exchange fee that is sent to a fee pool, available for stakers to claim their proportion each week. This fee is set by governance, and will be displayed by the SNX integrator before the trade. The other incentive for stakers is SNX staking rewards, which comes from the protocols inflationary monetary policy. These SNX tokens are distributed to SNX stakers weekly on a pro-rata basis provided their collateralization ratio does not fall below the target threshold.
+SNX holders are incentivized to stake their SNX in many ways. Firstly, there are exchange rewards. These are generated whenever someone makes an exchange within the Synthetix system. Each trade generates an exchange fee that is sent to a fee pool, available for stakers to claim their proportion each week. This fee is set by governance, and will be displayed by the SNX integrator before the trade.&#x20;
 
 To learn more about staking, please visit the Synthetix Staking guide.
 
