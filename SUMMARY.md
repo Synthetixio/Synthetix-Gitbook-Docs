@@ -64,7 +64,7 @@
 
 * [Perps Integration Guide](integrations/perps-integration-guide/README.md)
   * [Introduction](integrations/perps-integration-guide/introduction.md)
-  * [Getting Goerli & Optimistic Goerli Testnet Tokens](integrations/perps-integration-guide/getting-goerli-and-optimistic-goerli-testnet-tokens.md)
+  * [Optimistic Sepolia Testnet Tokens](integrations/perps-integration-guide/optimistic-sepolia-testnet-tokens.md)
   * [Technical Integration](integrations/perps-integration-guide/technical-integration.md)
   * [Perps Subgraph](integrations/perps-integration-guide/perps-subgraph.md)
   * [General FAQ](integrations/perps-integration-guide/general-faq.md)
