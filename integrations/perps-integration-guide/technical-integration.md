@@ -53,12 +53,12 @@ Each PerpsV2 market is deployed as a distinct instance of the `ProxyPerpsV2` con
 | ---------- | ------------------------------------------ |
 | sETHPERP   | 0x2B3bb4c683BFc5239B029131EEf3B1d214478d93 |
 
-#### Optimism Goerli
+#### Optimism Sepolia
 
 | MarketKey | Address                                    |
 | --------- | ------------------------------------------ |
-| sETHPERP  | 0x111BAbcdd66b1B60A20152a2D3D06d36F8B5703c |
-| sBTCPERP  | 0xd5844EA3701a4507C27ebc5EBA733E1Aa2915B31 |
+| sETHPERP  | 0xCa1Da01A412150b00cAD52b426d65dAB38Ab3830 |
+| sBTCPERP  | 0xcA3988389C58F9C46245abbD6e3549744d516531 |
 
 Due to contract size limitations, we've designed `ProxyPerpsV2` to be a router of sorts. The router proxies calls downstream to a collection of registered targets, which can be described by calling `getAllTargets` on `ProxyPerpsV2`. Although an implementation detail and likely not impactful for integration, it may helpful to understand how these contracts link together.
 

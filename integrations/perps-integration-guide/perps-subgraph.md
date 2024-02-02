@@ -1,13 +1,9 @@
 # Perps Subgraph
 
-There are subgraphs that provides all the necessary information for a perp trading front end. Available networks are Optimism and Optimism-Goerli:
+There are subgraphs that provides all the necessary information for a perp trading front end. Available networks are Optimism:
 
 {% embed url="https://thegraph.com/hosted-service/subgraph/synthetix-perps/perps" %}
 Optimism Mainnet subgraph for production
-{% endembed %}
-
-{% embed url="https://thegraph.com/hosted-service/subgraph/synthetix-perps/perps-op-goerli" %}
-Optimism Goerli subgraph for development and testing
 {% endembed %}
 
 ### Entities
