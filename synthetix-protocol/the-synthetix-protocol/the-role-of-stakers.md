@@ -6,7 +6,7 @@ description: Explaining the importance of stakers within Synthetix
 
 On Synthetix, all liquidity for Synthetix products is created by staking. Staking is an integral part of of the system and provides deep liquidity by locking collateral and maintaining a target c-ratio, which powers all of the products within the Synthetix protocol.
 
-When you stake SNX and mint sUSD, you take on debt reflecting the amount of sUSD that must be burned to unstake your SNX. This debt, which also represents a proportion of all the debt on Synthetix, is denominated in sUSD and increases and decreases in accordance with the supply of Synths and their exchange rates. For example, if half of Synthetix's Synths were synthetic ether (sETH) and the price of ether doubled, then the total debt and each staker's debt would rise by one quarter.
+When you stake SNX and mint sUSD, you take on debt reflecting the amount of sUSD that must be burned to unstake your SNX. This debt, which also represents a proportion of all the debt on Synthetix, is denominated in sUSD and increases and decreases in accordance with the supply of Synths and their exchange rates. For example, if half of Synthetix's Synths were synthetic ether (sETH) and the price of ether doubled, then the total debt of the protocol, alongside staker debt, would increase by the proportional debt pool amount (50%.)
 
 Synthetix staking is vastly different from other DeFi protocols because it allows anyone to earn rewards by contributing collateral to the Synthetix protocol. Staked SNX enables the many benefits for protocols built on Synthetix, such as deep liquidity, low slippage, and highly competitive trading fees.
 
