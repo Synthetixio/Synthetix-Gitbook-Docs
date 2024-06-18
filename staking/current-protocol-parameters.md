@@ -1,7 +1,3 @@
----
-description: 'Last Updated: Feb 27th, 2023'
----
-
 # Current Protocol Parameters
 
 ### Governance Adjustable Variables
