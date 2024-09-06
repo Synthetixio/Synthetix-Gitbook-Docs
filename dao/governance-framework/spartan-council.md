@@ -23,7 +23,7 @@ Besides the tasks mentioned above, Spartan Council members usually pursue differ
 
 **Election Process:**
 
-Synthetix Stakers are assigned a percentage of debt ownership in proportion to their amount of SNX staked, and their voting power is quadratically weighted. Voting is done through the fully on-chain Synthetix Governance Module.
+Synthetix Stakers are assigned a percentage of debt ownership in proportion to their amount of SNX staked, and their voting power is linearly weighted. Voting is done through the fully on-chain Synthetix Governance Module.
 
 **Members:**
 

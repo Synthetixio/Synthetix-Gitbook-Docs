@@ -18,7 +18,7 @@ For past inflation data, see the [Synthetix Inflation Stats](https://flipsidecry
 
 ### Governance
 
-Synthetix Stakers are assigned a percentage of debt ownership proportion to their amount of SNX staked. Then their voting weight is quadratically weighted for all but the Treasury Council. Voting is done through the fully on-chain Synthetix Governance Module.
+Synthetix Stakers are assigned a percentage of debt ownership proportion to their amount of SNX staked. Then their voting weight is  weighted for all but the  Council. Voting is done through the fully on-chain Synthetix Governance Module.
 
 {% content-ref url="../../dao/governance-framework/" %}
 [governance-framework](../../dao/governance-framework/)
