@@ -16,6 +16,10 @@ Synthetix utilizes the decentralized **Chainlink** [oracle network](https://chai
 
 The Synthetix protocol utilizes its respective `ExchangeRates` contract to retrieve frequently stored price updates.
 
+### Chainlink Custom Oracle&#x20;
+
+The Synthetix protocol relies on various Chainlink oracles, including custom-built oracles tailored for specific Synthetix markets and requirements. In particular, the sUSDe/USD oracle price is calculated by multiplying the sUSDe/USDe exchange rate with the USDe/USD market rate, capped at $1.00. If USDe exceeds $1.00, the oracle may report unexpected values.
+
 ### Synthetix Oracle Contracts
 
 At Synthetix, the on-chain manifestation of the oracle is the [`ExchangeRates`](https://docs.synthetix.io/contracts/source/contracts/ExchangeRates/) contract, which stores prices that are frequently updated by the oracle. The primary user of these prices is the [`Synthetix`](https://docs.synthetix.io/contracts/source/contracts/Synthetix/) contract, which needs them to calculate debt allocations when issuing and burning synths, and to determine the correct quantity of synths when performing an exchange of one flavour for another.
