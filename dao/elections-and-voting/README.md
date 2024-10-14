@@ -2,7 +2,7 @@
 
 Staked SNX represents your share of influence over the governance process, where you can apply the voting power to ensure the protocol is moving in the right direction. There are a few things you need to understand before taking part in the management of a decentralized entity, so here’s a quick entry point for navigating the different steps, resources, and stakeholders involved in the governance of the Synthetix Protocol.
 
-## **How to Vote** <a href="#8fe9" id="8fe9"></a>
+## **How to Vote** <a href="#id-8fe9" id="id-8fe9"></a>
 
 Step 1: Get Informed
 
@@ -12,13 +12,13 @@ Step 2: Stake SNX
 
 * By staking your SNX tokens you are using them as collateral to mint sUSD, a synthetic stable coin pegged to the US dollar and backed by the Synthetix network. This not only allows you to claim trading fees collected by the protocol, it also activates your voting power so that you can provide your opinions on proposed changes.&#x20;
 
-Step 3: Vote on the Synthetix Governance Module (every 4 months)
+Step 3: Vote on the Synthetix Governance Module (every 6 months)
 
 * Once you have voting power from staked SNX and you have a solid understanding of the protocol and ongoing proposals, you can vote in council member elections from the Synthetix Governance Module. These elected community members lead initiatives to support the protocol and represent the users when they weigh in on SIPs and SCCPs.
-* These elected community members are elected for 4-month terms; you can see the current elected council members by visiting the [Synthetix Governance Module](https://governance.synthetix.io/)
+* These elected community members are elected for 6-month terms; you can see the current elected council members by visiting the [Synthetix Governance Module](https://governance.synthetix.io/)
   * If you're using a Gnosis Safe, please read the [voting-with-a-gnosis-safe.md](voting-with-a-gnosis-safe.md "mention")to learn how to vote.
 
-## Voting <a href="#70cf" id="70cf"></a>
+## Voting <a href="#id-70cf" id="id-70cf"></a>
 
 <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,7 +26,7 @@ While the voting process is in theory as simple as staking and then submitting y
 
 Once you've voted, you’ve made your voice heard and contributed to the health of the Synthetix Community. Remember to check back on the Governance page to see the results of each Spartan Council members vote and make sure you stay informed by remaining engaged with the resources below.
 
-## **Resources and Tools** <a href="#53fd" id="53fd"></a>
+## **Resources and Tools** <a href="#id-53fd" id="id-53fd"></a>
 
 **Discord**
 
@@ -42,7 +42,7 @@ The [Synthetix](https://twitter.com/synthetix\_io) Twitter account is a great pl
 
 The official [Synthetix Blog](http://blog.synthetix.io/) publishes monthly updates, info about community calls and releases as well as other important developments. You can also check out the [SNXweave Blog](https://snxweave.medium.com/) for weekly recaps. If audio is more your thing, the [SNXweave](https://open.spotify.com/show/5RkXS9nwyfkwQsnt7svavX) Podcast on Spotify uploads short weekly recaps of SIPs, Spartan Council Panels and other developments. Another Spotify podcast, [Synthetix Discussions](https://open.spotify.com/show/3ucEqjfVDzJ8wSyVxheTPA), includes longer form discussion about SIPs and Community Governance calls.
 
-## **Understanding the Governance process** <a href="#6d33" id="6d33"></a>
+## **Understanding the Governance process** <a href="#id-6d33" id="id-6d33"></a>
 
 Since the [Synthetix Foundation transitioned control to the community in July 2020](https://blog.synthetix.io/synthetix-foundation-decommissioned/), changes to the protocol have been proposed and voted on by community members along with the protocolDAO and Spartan Council.&#x20;
 

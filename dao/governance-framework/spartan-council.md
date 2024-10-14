@@ -7,9 +7,9 @@ coverY: 0
 
 ### What is the Spartan Council?
 
-The Spartan Council (SC) is a governing DAO which currently comprises 8 members who are elected (see Elections) for the duration of an epoch by community staking participants. Established via [SIP-93](https://sips.synthetix.io/sips/sip-93), the SC is responsible for conducting SIP/SCCP interviews, debating the implications of proposed changes, coordinating protocol changes with the protocol DAO and hosting periodic community governance meetings in order to best represent and protect the wider Synthetix stakeholders.
+The Spartan Council (SC) is a governing DAO which currently comprises 8 members who are elected (see Elections) for the duration of an epoch by community staking participants. Established via [SIP-93](https://sips.synthetix.io/sips/sip-93) and updated by [SR-2](https://sips.synthetix.io/srs/sr-2/), the SC is responsible for conducting SIP/SCCP interviews, debating the implications of proposed changes, coordinating protocol changes with the protocol DAO and hosting periodic community governance meetings in order to best represent and protect the wider Synthetix stakeholders.
 
-The SC, like other DAO roles, are paid a stipend by the Synthetix DAO and conduct their duties on the relevant discord governance channels and utilises [snapshot’s](https://snapshot.org/) IPFS signature voting on the staking governance [site](https://staking.synthetix.io/gov).
+The SC, like other DAO roles, are paid a stipend by the Synthetix DAO and conduct their duties on the relevant discord governance channels and utilizes [snapshot’s](https://snapshot.org/) IPFS signature voting on the staking governance [site](https://staking.synthetix.io/gov).
 
 Spartan Council members vote on Synthetix Improvement Proposals (SIP) and Synthetix Configuration Change Proposal (SCCP).&#x20;
 
