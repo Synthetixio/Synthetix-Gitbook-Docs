@@ -76,7 +76,7 @@
 
 ***
 
-* [Terms of Use](https://staking.synthetix.eth.limo/terms)
+* [Terms of Use](https://staking.synthetix.io/terms)
 
 ## Brand Assets
 

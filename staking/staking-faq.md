@@ -37,9 +37,9 @@ You will now be able to mint from those escrowed SNX as they are also used as yo
 
 If you try to send more SNX than is transferrable, the transaction will fail.\
 \
-In the Staking dapp, if you go to the [mint page](https://staking.synthetix.eth.limo/staking/mint) it will show you how much of your SNX is transferrable and how much is in escrow.
+In the Staking dapp, if you go to the [mint page](https://staking.synthetix.io/staking/mint) it will show you how much of your SNX is transferrable and how much is in escrow.
 
-To unlock your locked (staked) SNX, you need to 'burn' the sUSD active debt you owe. Go to the [burn section](https://staking.synthetix.eth.limo/staking/burn) of the Synthetix dapp to unlock SNX.
+To unlock your locked (staked) SNX, you need to 'burn' the sUSD active debt you owe. Go to the [burn section](https://staking.synthetix.io/staking/burn) of the Synthetix dapp to unlock SNX.
 
 </details>
 
@@ -83,7 +83,7 @@ There are three ways to increase your C-Ratio:
 
 <summary>How do I transfer SNX (and other synths) between Optimism and Mainnet?</summary>
 
-Please use the [SNX bridge](https://staking.synthetix.eth.limo/bridge), powered by Socket, to transfer SNX and other synths between Optimism and Mainnet.
+Please use the [SNX bridge](https://staking.synthetix.io/bridge), powered by Socket, to transfer SNX and other synths between Optimism and Mainnet.
 
 </details>
 
