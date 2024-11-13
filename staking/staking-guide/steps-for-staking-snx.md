@@ -7,10 +7,10 @@
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-1. **Visit the Staking Site**: Go to [staking.synthetix.eth.limo](https://staking.synthetix.eth.limo/) and connect your wallet.
+1. **Visit the Staking Site**: Go to[staking.synthetix.io](https://staking.synthetix.io) and connect your wallet.
 2. **Connect to the Optimism Network**: Ensure your wallet is connected to Optimistic Ethereum. Visit [https://chainlist.org/](https://chainlist.org/) to add the network.
 3. **Bridge Ethereum for Gas Fees**: Bridge Ethereum through the [Optimism Gateway](https://gateway.optimism.io/) for fees on Optimism.
-4. **Stake Your SNX on Optimism**: Use the "Stake & Borrow More" button on the [Synthetix Staking app](https://staking.synthetix.eth.limo/) to stake your SNX.
+4. **Stake Your SNX on Optimism**: Use the "Stake & Borrow More" button on the [Synthetix Staking app](https://staking.synthetix.io) to stake your SNX.
 
 <figure><img src="../../.gitbook/assets/Mintinggif.gif" alt=""><figcaption></figcaption></figure>
 

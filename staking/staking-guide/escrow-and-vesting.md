@@ -14,5 +14,5 @@ After the 52-week escrow period, stakers can vest their SNX rewards.
 
 ### **How do I vest my Escrowed SNX?**
 
-* Go to [https://staking.synthetix.eth.limo/escrow](https://staking.synthetix.eth.limo/escrow)
+* Go to [https://staking.synthetix.io/escrow](https://staking.synthetix.io/escrow)
 * Vest your tokens in the UI

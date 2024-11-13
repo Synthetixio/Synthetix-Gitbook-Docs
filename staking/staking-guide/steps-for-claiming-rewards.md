@@ -18,4 +18,4 @@ With the passage of SIP 2043, stakers no longer need to claim inflationary rewar
 
 <figure><img src="../../.gitbook/assets/Claiminggif.gif" alt=""><figcaption></figcaption></figure>
 
-**Troubleshooting**: If you're unable to claim, it could be due to a c-ratio below the target. Increase your c-ratio by burning sUSD or staking more SNX at [https://staking.synthetix.eth.limo/staking/burn](https://staking.synthetix.eth.limo/staking/burn).
+**Troubleshooting**: If you're unable to claim, it could be due to a c-ratio below the target. Increase your c-ratio by burning sUSD or staking more SNX at [https://staking.synthetix.io/staking/burn](https://staking.synthetix.io/staking/burn).
